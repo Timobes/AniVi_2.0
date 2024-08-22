@@ -12,5 +12,6 @@ dotenv.config()
 module.exports = new Sequelize('anivi2.0', 'postgres', 'timober21', {
     host: 'localhost',
     dialect: 'postgres',
+    logging: false
 })
 
