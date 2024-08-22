@@ -1,4 +1,5 @@
 const db = require('../db/db.js')
+const User = require('../db/models/userModel.js')
 const { createJWTPassword } = require('../utility/createJWTPassword.js')
 const {createToken} = require('../utility/createToken.js')
 const { readJWTPassword } = require('../utility/readJWTPassword.js')
@@ -22,11 +23,16 @@ class AuthService {
             const accessToken = createToken(login, '30m')
             const refreshToken = createToken(login, '30d')
 
-            const createUser = await db.query('INSERT INTO users(login, pass, ref_token) VALUES($1, $2, $3) RETURNING *', [login, jwtpass, refreshToken])
+            // const createUser = await db.query('INSERT INTO users(login, pass, ref_token) VALUES($1, $2, $3) RETURNING *', [login, jwtpass, refreshToken])
+            const createUser = await User.create({
+                login: login,
+                pass: jwtpass,
+                ref_token: refreshToken
+            })
 
             console.log('J',jwtpass, 'A', accessToken, 'R', refreshToken)
-            console.log(createUser.rows)
-            const rows = createUser.rows
+            console.log(createUser)
+            const rows = createUser
 
             return {"message": "Пользователь создан!", "accessToken": `${accessToken}`, rows}
         }

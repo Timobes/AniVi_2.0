@@ -3,12 +3,44 @@ const app = express()
 const router = require('./routers/mainRouter')
 const cors = require('cors')
 const cookieParser = require('cookie-parser');
+const db = require('./db/db')
 
-
-const dotenv = require('dotenv')
+const dotenv = require('dotenv');
 dotenv.config()
 
 const port = 8080
+
+db.sync()
+
+// User.sync()
+// ------------------------------
+
+// User.create({
+//     username: 'janedoe',
+//     age: 21
+// });
+
+// User.findAll()
+//   .then(users => {
+//     console.log(users);
+//   })
+//   .catch(error => {
+//     console.error('Error:', error);
+//   });
+
+// User.findOne({
+//   where: {
+//     id: 1
+//   }
+// }) 
+// .then(users => {
+//     console.log(users.dataValues);
+// })
+// .catch(error => {
+//     console.error('Error:', error);
+// });
+
+// ------------------------------
 
 app.use(express.json())
 
