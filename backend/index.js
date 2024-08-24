@@ -6,15 +6,34 @@ const cookieParser = require('cookie-parser');
 const db = require('./db/db')
 
 const dotenv = require('dotenv');
+
+const Anime = require('./db/models/animeModel');
+const User = require('./db/models/userModel');
+
 dotenv.config()
 
 const port = 8080
 
-db.sync()
 
 // User.sync()
 // ------------------------------
+// console.log(Anime)
 
+// User.findAll({
+//   include: [{
+//     model: Anime,
+//     where: {
+//       user_id: 1
+//     }
+//   }]
+// })
+//   .then(users => {
+//     console.log(users[0].dataValues.animes)
+//   })
+
+//   .catch(err => {
+//     console.log(err)
+//   })
 // User.create({
 //     username: 'janedoe',
 //     age: 21
@@ -41,6 +60,8 @@ db.sync()
 // });
 
 // ------------------------------
+
+db.sync()
 
 app.use(express.json())
 
