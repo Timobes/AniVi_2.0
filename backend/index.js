@@ -9,15 +9,21 @@ const dotenv = require('dotenv');
 
 const Anime = require('./db/models/animeModel');
 const User = require('./db/models/userModel');
+const AnimeEp = require('./db/models/animeEpModel');
+const Genre = require('./db/models/genreModel');
+const AnimeGenre = require('./db/models/animeGenreModel');
 
 dotenv.config()
 
 const port = 8080
 
-
-// User.sync()
 // ------------------------------
 // console.log(Anime)
+
+// User.sync()
+// AnimeEp.sync()
+// Genre.sync()
+// AnimeGenre.sync()
 
 // User.findAll({
 //   include: [{
@@ -62,6 +68,8 @@ const port = 8080
 // ------------------------------
 
 db.sync()
+
+app.use(express.static('static'))
 
 app.use(express.json())
 
