@@ -3,6 +3,7 @@ const authController = require('../controllers/authController')
 const { checkTokenMiddleware } = require('../middleware/checkTokenMiddleware')
 const { checkAdminMiddleware } = require('../middleware/checkAdminMiddleware')
 const { checkRefreshTokenMiddleware } = require('../middleware/checkRefreshTokenMiddleware')
+const { upload } = require('../utility/storage')
 const authRouter = new Router()
 
 // Login 
@@ -12,7 +13,7 @@ authRouter.post('/login', authController.login)
 authRouter.post('/auth', authController.auth)
 
 // TestToken
-authRouter.post('/test', checkTokenMiddleware, checkRefreshTokenMiddleware, authController.test)
+authRouter.post('/test', checkTokenMiddleware, checkRefreshTokenMiddleware, checkAdminMiddleware, upload.single('avatar'), authController.test)
 
 // TestAdmin
 authRouter.post('/admin', checkTokenMiddleware, checkRefreshTokenMiddleware, checkAdminMiddleware, authController.admin)

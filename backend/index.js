@@ -18,12 +18,15 @@ dotenv.config()
 const port = 8080
 
 // ------------------------------
-// console.log(Anime)
 
+// Anime.sync()
 // User.sync()
 // AnimeEp.sync()
 // Genre.sync()
 // AnimeGenre.sync()
+
+// console.log(Anime, User, AnimeEp, Genre, AnimeGenre)
+
 
 // User.findAll({
 //   include: [{

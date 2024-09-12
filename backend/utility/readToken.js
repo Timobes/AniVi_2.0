@@ -21,7 +21,8 @@ function readToken(token) {
         return {jwtPass, "newToken": token}
     } catch (error) {
         console.log(error)
-        return 0
+        // res.json("error")
+        return {"message": "ошибка"}
     } 
 }
 

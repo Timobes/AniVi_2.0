@@ -1,4 +1,3 @@
-const db = require('../db/db.js')
 const User = require('../db/models/userModel.js')
 const { createJWTPassword } = require('../utility/createJWTPassword.js')
 const {createToken} = require('../utility/createToken.js')
