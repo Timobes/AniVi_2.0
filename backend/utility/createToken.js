@@ -3,8 +3,8 @@ const jwt = require('jsonwebtoken')
 const dotenv = require('dotenv')
 dotenv.config()
 
-function createToken(nickname, time) {
-    jwtPass = jwt.sign({ nickname }, process.env.SECRET_TOKEN, { expiresIn: `${time}` })
+function createToken(username, time) {
+    jwtPass = jwt.sign({ username }, process.env.SECRET_TOKEN, { expiresIn: `${time}` })
 
     return jwtPass
 }

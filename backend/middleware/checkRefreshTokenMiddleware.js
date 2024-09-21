@@ -10,8 +10,8 @@ async function checkRefreshTokenMiddleware(req, res, next) {
         let headerToken = req.cookies.accessToken
         let readHeaderToken = readToken(headerToken)
 
-        // const refToken = await db.query("SELECT * FROM users WHERE login = $1", [readHeaderToken.jwtPass.nickname])
-        const refToken = await User.findOne({where: {username: readHeaderToken.jwtPass.nickname}})
+        // const refToken = await db.query("SELECT * FROM users WHERE login = $1", [readHeaderToken.jwtPass.username])
+        const refToken = await User.findOne({where: {username: readHeaderToken.jwtPass.username}})
 
         console.log(refToken.dataValues.ref_token)
         const readRefToken = readRefreshToken(refToken.dataValues.ref_token)

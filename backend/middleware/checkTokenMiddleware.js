@@ -9,12 +9,12 @@ async function checkTokenMiddleware(req, res, next) {
         let headerToken = req.cookies.accessToken
         let readHeaderToken = readToken(headerToken)
         
-        let refreshToken = await User.findOne({where: {username: readHeaderToken.jwtPass.nickname}})
+        let refreshToken = await User.findOne({where: {username: readHeaderToken.jwtPass.username}})
 
         refreshToken = refreshToken.dataValues.ref_token
         let readRefreshToken = readToken(refreshToken)
         
-        if(readHeaderToken.jwtPass.nickname == readRefreshToken.jwtPass.nickname) {
+        if(readHeaderToken.jwtPass.username == readRefreshToken.jwtPass.username) {
             console.log('Доступ предоставлен!')
             
             res.cookie('accessToken', readHeaderToken.newToken, {

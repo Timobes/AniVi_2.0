@@ -1,16 +1,28 @@
 const multer = require('multer')
 
-const storage = multer.diskStorage({
+const storageConfig = multer.diskStorage({
     destination: function (req, file, cb) {
-        // console.log(req)
+
         console.log(file)
+
         switch (file.fieldname) {
-            case 'anime':
-                cb(null, 'static/anime')
+
+            case 'anime_moments':
+                cb(null, 'static/anime/anime_moments')
                 break;
-            
+
+            case 'anime':
+                // let nameFolder = file.originalname
+                // nameFolder.replaceAll(' ', '')
+
+                // cb(null, `static/anime/${nameFolder}`)
+
+                // cb(null, 'static/anime')
+
+                break
+
             case 'avatar':
-                cb(null, 'static/avatar')
+                cb(null, 'static/users/avatar')
                 break
 
             default:
@@ -23,6 +35,6 @@ const storage = multer.diskStorage({
     }
 })
 
-const upload = multer({ storage  })
+const upload = multer({ storage: storageConfig  })
 
-module.exports = {storage, upload}
+module.exports = upload

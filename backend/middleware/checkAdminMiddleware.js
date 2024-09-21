@@ -9,8 +9,8 @@ async function checkAdminMiddleware(req, res, next) {
         let headerToken = req.cookies.accessToken
         let readHeaderToken = readToken(headerToken)
 
-        // const user = await db.query("SELECT role_id FROM users WHERE login = $1", [readHeaderToken.jwtPass.nickname])
-        const user = await User.findOne({where: {username: readHeaderToken.jwtPass.nickname}})
+        // const user = await db.query("SELECT role_id FROM users WHERE login = $1", [readHeaderToken.jwtPass.username])
+        const user = await User.findOne({where: {username: readHeaderToken.jwtPass.username}})
 
         if (user.dataValues.role === 9) {
             console.log('Админ прошёл проверку')

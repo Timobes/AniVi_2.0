@@ -10,7 +10,7 @@ function readToken(token) {
 
         jwt.verify(token, process.env.SECRET_TOKEN, function(err, decoded) {
             if (err && err.name === 'TokenExpiredError') {
-                token = createToken(jwtPass.nickname, '30m')
+                token = createToken(jwtPass.username, '30m')
                 
                 let returnedFunc = readToken(token)
             } else {

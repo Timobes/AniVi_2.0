@@ -15,7 +15,7 @@ const AnimeGenre = require('./db/models/animeGenreModel');
 
 dotenv.config()
 
-const port = 8080
+const port = process.env.BACK_PORT || 8080
 
 // ------------------------------
 
