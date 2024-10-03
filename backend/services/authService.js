@@ -1,4 +1,5 @@
 const User = require('../db/models/userModel.js')
+const { createAvatarFolder } = require('../utility/createAvatarFolder.js')
 const { createJWTPassword } = require('../utility/createJWTPassword.js')
 const {createToken} = require('../utility/createToken.js')
 const { readJWTPassword } = require('../utility/readJWTPassword.js')
@@ -28,6 +29,8 @@ class AuthService {
                 pass: jwtpass,
                 ref_token: refreshToken
             })
+
+            createAvatarFolder(username)
 
             const rows = createUser
 
@@ -76,7 +79,7 @@ class AuthService {
         const nickname = readToken(whatIsUser)
         
         // const userProfile = await db.query('SELECT * FROM users WHERE login = $1', [nickname.jwtPass.nickname])
-        const userProfile = await User.findOne({where: {username: nickname.jwtPass.nickname}})
+        const userProfile = await User.findOne({where: {username: nickname.jwtPass.username}})
         
         const rows = userProfile.dataValues
 

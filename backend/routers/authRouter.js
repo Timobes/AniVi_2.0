@@ -13,7 +13,7 @@ authRouter.post('/login', authController.login)
 authRouter.post('/auth', authController.auth)
 
 // TestToken
-authRouter.post('/test', checkTokenMiddleware, checkRefreshTokenMiddleware, checkAdminMiddleware, upload.single('anime'), authController.test)
+authRouter.post('/test', checkTokenMiddleware, checkRefreshTokenMiddleware, checkAdminMiddleware, upload.single('avatar'), authController.test)
 
 // TestAdmin
 authRouter.post('/admin', checkTokenMiddleware, checkRefreshTokenMiddleware, checkAdminMiddleware, authController.admin)
