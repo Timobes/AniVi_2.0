@@ -7,6 +7,10 @@ const storageConfig = multer.diskStorage({
 
         switch (file.fieldname) {
 
+            case 'anime_poster':
+                cb(null, 'static/anime/anime_posters')
+                break
+
             case 'anime_moments':
                 cb(null, 'static/anime/anime_moments')
                 break;

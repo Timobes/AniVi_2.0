@@ -1,4 +1,5 @@
 const Anime = require("../db/models/animeModel")
+const { createAnimeFolder } = require("../utility/createAnimeFolder")
 
 class AnimeService {
     async getAllAnime() {
@@ -38,6 +39,8 @@ class AnimeService {
                 poster_url: poster_url, 
                 user_id: user_id
             })
+
+            createAnimeFolder(anime_title_eng)
             
             return anime
         } catch (error) {
