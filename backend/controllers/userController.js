@@ -1,9 +1,29 @@
 const userService = require("../services/userService")
 
 class UserController {
-    async GetUser (req, res) {
+    async GetUsers (req, res) {
         try {
-            const user = await userService(req.body)
+            const user = await userService.GetUsers()
+
+            res.json(user)
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    async GetOneUser (req, res) {
+        try {
+            const user = await userService.GetOneUser(req.params.id)
+
+            res.json(user)
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    async DeleteUser (req, res) {
+        try {
+            const user = await userService.DeleteUser(req.params.id)
 
             res.json(user)
         } catch (error) {

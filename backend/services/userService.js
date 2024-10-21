@@ -1,7 +1,9 @@
+const User = require("../db/models/userModel")
+
 class UserService {
-    async GetUser (body) {
+    async GetUsers () {
         try {
-            const user = ''
+            const user = User.findAll()
 
             return user
         } catch (error) {
@@ -9,6 +11,33 @@ class UserService {
         }
     }
 
+    async GetOneUser (id) {
+        try {
+            const user = User.findOne({
+                where: {
+                    user_id: id
+                }
+            })
+
+            return user
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    async DeleteUser (id) {
+        try {
+            const user = User.destroy({
+                where: {
+                    user_id: id
+                }
+            })
+
+            return user
+        } catch (error) {
+            console.log(error)
+        }
+    }
 }
 
 module.exports = new UserService
