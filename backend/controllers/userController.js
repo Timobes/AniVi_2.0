@@ -31,6 +31,16 @@ class UserController {
         }
     }
 
+    async CreateAvatar (req, res) {
+        try {
+            const avatar = await userService.CreateAvatar()
+
+            res.json(avatar)
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
 }
 
 module.exports = new UserController

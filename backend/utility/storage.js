@@ -43,15 +43,10 @@ const storageConfig = multer.diskStorage({
         
         if (index == -1) {
             console.log('неправильно названный файл!')
-
-            // Создать обработчик для таких случаев
             cb(null, name)
-
         } else {
             name = name.substring(index + 1)
         }
-
-        // cb(null, name)
     }
 })
 

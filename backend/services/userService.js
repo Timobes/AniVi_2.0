@@ -38,6 +38,15 @@ class UserService {
             console.log(error)
         }
     }
+
+    async CreateAvatar () {
+        try {
+
+            return {message: "вы добавили аватар!"}
+        } catch (error) {
+            console.log(error)
+        }
+    }
 }
 
 module.exports = new UserService
