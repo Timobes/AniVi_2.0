@@ -41,7 +41,25 @@ class AnimeController {
         }        
     }
 
-    
+    async sendPoster(req, res) {
+        try {
+            const anime = await animeService.sendPoster()
+
+            res.json(anime)
+        } catch (error) {
+            console.log(error)
+        }        
+    }
+
+    async sendMoments(req, res) {
+        try {
+            const anime = await animeService.sendMoments()
+
+            res.json(anime)
+        } catch (error) {
+            console.log(error)
+        }        
+    }
 }
 
 module.exports = new AnimeController

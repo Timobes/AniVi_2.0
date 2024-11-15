@@ -61,6 +61,25 @@ class AnimeService {
             console.log(error)
         }
     }
+
+    async sendPoster() {
+        try {
+            const anime = 'постер добавлен!'
+
+            return anime
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    async sendMoments() {
+        try {
+            const anime = 'аниме моменты созданы'
+            return anime
+        } catch (error) {
+            console.log(error)
+        }
+    }
 }
 
 module.exports = new AnimeService

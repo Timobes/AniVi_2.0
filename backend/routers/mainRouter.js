@@ -9,7 +9,7 @@ const userRouter = require('./userRouter')
 
 router.use('/auth', authRouter)
 router.use('/user', userRouter)
-    
+
 router.use('/anime', animeRouter)
 router.use('/anime/ep', animeEpRouter)
 

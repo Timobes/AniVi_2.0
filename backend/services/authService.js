@@ -50,7 +50,6 @@ class AuthService {
             const accessToken = createToken(username, '30m')
             const refreshToken = createToken(username, '30d')
             
-            // await db.query('UPDATE users SET ref_token = $1', [refreshToken])
             await User.update({ref_token: refreshToken},{where: {pass: isPass}})
 
             res.cookie('accessToken', accessToken, {
@@ -78,7 +77,6 @@ class AuthService {
         const whatIsUser = req.cookies.accessToken
         const nickname = readToken(whatIsUser)
         
-        // const userProfile = await db.query('SELECT * FROM users WHERE login = $1', [nickname.jwtPass.nickname])
         const userProfile = await User.findOne({where: {username: nickname.jwtPass.username}})
         
         const rows = userProfile.dataValues
