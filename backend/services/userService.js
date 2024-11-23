@@ -3,7 +3,7 @@ const User = require("../db/models/userModel")
 class UserService {
     async GetUsers () {
         try {
-            const user = User.findAll()
+            const user = await User.findAll()
 
             return user
         } catch (error) {
@@ -13,7 +13,7 @@ class UserService {
 
     async GetOneUser (id) {
         try {
-            const user = User.findOne({
+            const user = await User.findOne({
                 where: {
                     user_id: id
                 }
@@ -27,7 +27,7 @@ class UserService {
 
     async DeleteUser (id) {
         try {
-            const user = User.destroy({
+            const user = await User.destroy({
                 where: {
                     user_id: id
                 }

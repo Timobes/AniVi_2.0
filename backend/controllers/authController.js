@@ -22,16 +22,6 @@ class AuthController {
         }
     }
 
-    async test(req, res) {
-        try {
-            const user = await authService.test(req)
-
-            res.json(user)
-        } catch (error) {
-            console.log(error)
-        }
-    }
-
     async admin(req, res) {
         try {
             const user = await authService.admin(req)

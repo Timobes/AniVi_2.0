@@ -23,7 +23,6 @@ class AuthService {
             const accessToken = createToken(username, '30m')
             const refreshToken = createToken(username, '30d')
 
-            // const createUser = await db.query('INSERT INTO users(login, pass, ref_token) VALUES($1, $2, $3) RETURNING *', [login, jwtpass, refreshToken])
             const createUser = await User.create({
                 username: username,
                 pass: jwtpass,
@@ -41,7 +40,6 @@ class AuthService {
     async auth(body, res) {
         const {username, pass} = body
 
-        // const nickname = await db.query('SELECT * FROM users WHERE login = $1', [login])
         const nickname = await User.findOne({where: {username: username}})
         const isPass = nickname.dataValues.pass
         const readPass = readJWTPassword(isPass)
@@ -63,10 +61,6 @@ class AuthService {
             return {"message": "Неправильный пароль!"}
 
         }
-    }
-
-    async test(req) {
-        return {"message": "test"}
     }
 
     async admin(req) {

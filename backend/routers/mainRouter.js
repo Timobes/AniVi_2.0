@@ -6,6 +6,7 @@ const animeRouter = require('./animeRouter')
 const animeEpRouter = require('./animeEpRouter')
 const genreRouter = require('./genreRouter')
 const userRouter = require('./userRouter')
+const animeGenreRouter = require('./animeGenreRouter')
 
 router.use('/auth', authRouter)
 router.use('/user', userRouter)
@@ -14,6 +15,6 @@ router.use('/anime', animeRouter)
 router.use('/anime/ep', animeEpRouter)
 
 router.use('/genre', genreRouter)
-// AnimeGenre
+router.use('/genre/anime', animeGenreRouter)
 
 module.exports = router
