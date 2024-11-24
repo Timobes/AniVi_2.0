@@ -5,13 +5,16 @@ const cors = require('cors')
 const cookieParser = require('cookie-parser');
 const db = require('./db/db')
 
+const httpLogger = require('./httpLogger')
+const logger = require('./logger')
+
 const dotenv = require('dotenv');
 
-const Anime = require('./db/models/animeModel');
-const User = require('./db/models/userModel');
-const AnimeEp = require('./db/models/animeEpModel');
-const Genre = require('./db/models/genreModel');
-const AnimeGenre = require('./db/models/animeGenreModel');
+// const Anime = require('./db/models/animeModel');
+// const User = require('./db/models/userModel');
+// const AnimeEp = require('./db/models/animeEpModel');
+// const Genre = require('./db/models/genreModel');
+// const AnimeGenre = require('./db/models/animeGenreModel');
 
 dotenv.config()
 
@@ -74,6 +77,8 @@ db.sync()
 
 app.use(express.static('static'))
 
+app.use(httpLogger)
+
 app.use(express.json())
 
 app.use(cookieParser());
@@ -90,6 +95,9 @@ app.use(cors({
 }))
 
 app.use('/api', router)
+
+// logger.info('Сервер запущен')
+// logger.warn('Ошибка!!!')
 
 app.get('/', function(req, res){
     res.send('<h1>Hello AniVi 2.0 backend!</h1>')
