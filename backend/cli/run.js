@@ -27,7 +27,7 @@ class ${bigName}Controller {
 
             res.json({"message":"test"})
         } catch (error) {
-            console.log(error) 
+            logger.error(error) 
         }
     }
 }
@@ -40,7 +40,7 @@ class ${bigName}Service {
 
             return test
         } catch (error) {
-            console.log(error) 
+            logger.error(error) 
         }
     }
 }

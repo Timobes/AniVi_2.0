@@ -10,14 +10,12 @@ function readRefreshToken(token) {
         jwt.verify(token, process.env.SECRET_TOKEN, function(err, decoded) {
             if (err && err.name === 'TokenExpiredError') {
                 jwtPass = null
-            } else {
-                console.log('Ref Token is valid');
-            }
+            } 
         });
         
         return jwtPass
     } catch (error) {
-        console.log(error)
+        logger.error(error)
         return 0
     } 
 }

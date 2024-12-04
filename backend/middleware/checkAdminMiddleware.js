@@ -1,4 +1,5 @@
 const User = require('../db/models/userModel')
+const logger = require('../logging/logger')
 const {readToken} = require('../utility/readToken')
 
 const dotenv = require('dotenv')
@@ -13,14 +14,14 @@ async function checkAdminMiddleware(req, res, next) {
         const user = await User.findOne({where: {username: readHeaderToken.jwtPass.username}})
 
         if (user.dataValues.role === 9) {
-            console.log('Админ прошёл проверку')
+            logger.info('Админ прошёл проверку')
             next()
         } else {
-            console.log("У вас недостаточно прав!")
+            logger.warn("У вас недостаточно прав!")
             return res.json({"message": "У вас недостаточно прав!"})
         }
     } catch (error) {
-        console.log(error)
+        logger.error(error)
         return {"message":"Ошибка!"}
     }
 }

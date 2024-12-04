@@ -1,3 +1,4 @@
+const logger = require("../logging/logger")
 const animeService = require("../services/animeService")
 
 class AnimeController {
@@ -7,7 +8,7 @@ class AnimeController {
 
             res.json(anime)
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }        
     }
 
@@ -17,7 +18,7 @@ class AnimeController {
 
             res.json(anime)
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }        
     }
 
@@ -27,21 +28,39 @@ class AnimeController {
 
             res.json(anime)
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }        
     }
 
     async deleteAnime(req, res) {
         try {
             const anime = await animeService.deleteAnime(req.params.id)
-            console.log(`anime с id ${anime} удалено`)
+            logger.info(`anime с id ${anime} удалено`)
             res.json(anime)
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }        
     }
 
-    
+    async sendPoster(req, res) {
+        try {
+            const anime = await animeService.sendPoster()
+
+            res.json(anime)
+        } catch (error) {
+            logger.error(error)
+        }        
+    }
+
+    async sendMoments(req, res) {
+        try {
+            const anime = await animeService.sendMoments()
+
+            res.json(anime)
+        } catch (error) {
+            logger.error(error)
+        }        
+    }
 }
 
 module.exports = new AnimeController

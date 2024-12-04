@@ -1,4 +1,5 @@
 const authService = require("../services/authService")
+const logger = require("../logging/logger")
 
 class AuthController {
 
@@ -8,7 +9,7 @@ class AuthController {
 
             res.json(user)
         } catch (error) {
-           console.log(error) 
+           logger.error(error) 
         }
     }
 
@@ -18,17 +19,7 @@ class AuthController {
 
             res.json(user)
         } catch (error) {
-           console.log(error) 
-        }
-    }
-
-    async test(req, res) {
-        try {
-            const user = await authService.test(req)
-
-            res.json(user)
-        } catch (error) {
-            console.log(error)
+           logger.error(error) 
         }
     }
 
@@ -38,7 +29,7 @@ class AuthController {
 
             res.json(user)
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }
     }
 
@@ -48,7 +39,7 @@ class AuthController {
 
             res.json(user)
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }
     }
 
@@ -58,7 +49,7 @@ class AuthController {
 
             res.json(user)
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }
     }
 }

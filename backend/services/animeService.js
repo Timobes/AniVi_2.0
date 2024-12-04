@@ -1,4 +1,6 @@
 const Anime = require("../db/models/animeModel")
+const logger = require("../logging/logger")
+const { createAnimeFolder } = require("../utility/createAnimeFolder")
 
 class AnimeService {
     async getAllAnime() {
@@ -7,7 +9,7 @@ class AnimeService {
             
             return anime
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }
     }
 
@@ -21,7 +23,7 @@ class AnimeService {
             
             return anime
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }
     }
 
@@ -38,10 +40,12 @@ class AnimeService {
                 poster_url: poster_url, 
                 user_id: user_id
             })
+
+            createAnimeFolder(anime_title_eng)
             
             return anime
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }
     }
 
@@ -55,7 +59,26 @@ class AnimeService {
             
             return anime
         } catch (error) {
-            console.log(error)
+            logger.error(error)
+        }
+    }
+
+    async sendPoster() {
+        try {
+            const anime = 'постер добавлен!'
+
+            return anime
+        } catch (error) {
+            logger.error(error)
+        }
+    }
+
+    async sendMoments() {
+        try {
+            const anime = 'аниме моменты созданы'
+            return anime
+        } catch (error) {
+            logger.error(error)
         }
     }
 }

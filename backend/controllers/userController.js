@@ -1,13 +1,44 @@
 const userService = require("../services/userService")
+const logger = require("../logging/logger")
 
 class UserController {
-    async GetUser (req, res) {
+    async GetUsers (req, res) {
         try {
-            const user = await userService(req.body)
+            const user = await userService.GetUsers()
 
             res.json(user)
         } catch (error) {
-            console.log(error)
+            logger.error(error)
+        }
+    }
+
+    async GetOneUser (req, res) {
+        try {
+            const user = await userService.GetOneUser(req.params.id)
+
+            res.json(user)
+        } catch (error) {
+            logger.error(error)
+        }
+    }
+
+    async DeleteUser (req, res) {
+        try {
+            const user = await userService.DeleteUser(req.params.id)
+
+            res.json(user)
+        } catch (error) {
+            logger.error(error)
+        }
+    }
+
+    async CreateAvatar (req, res) {
+        try {
+            const avatar = await userService.CreateAvatar()
+
+            res.json(avatar)
+        } catch (error) {
+            logger.error(error)
         }
     }
 

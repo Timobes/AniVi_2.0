@@ -9,9 +9,9 @@ dotenv.config()
 //     // port: process.env.DB_PORT,
 //     // database: process.env.DB_DATABASE
 
-module.exports = new Sequelize('anivi2.0', 'postgres', 'timober21', {
+module.exports = new Sequelize('anivi', 'postgres', 'timober', {
     host: 'localhost',
     dialect: 'postgres',
-    logging: false
+    logging: false,
 })
 
