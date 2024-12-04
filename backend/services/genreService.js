@@ -1,3 +1,4 @@
+const logger = require("../logging/logger")
 const Genre = require("../db/models/genreModel")
 
 class GenreService {
@@ -7,7 +8,7 @@ class GenreService {
 
             return genre
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }
     }
 
@@ -21,7 +22,7 @@ class GenreService {
 
             return genre
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }
     }
 
@@ -35,7 +36,7 @@ class GenreService {
 
             return genre
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }
     }
 
@@ -49,7 +50,7 @@ class GenreService {
 
             return genre
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }
     }
 }

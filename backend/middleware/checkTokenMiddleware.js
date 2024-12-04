@@ -15,7 +15,6 @@ async function checkTokenMiddleware(req, res, next) {
         let readRefreshToken = readToken(refreshToken)
         
         if(readHeaderToken.jwtPass.username == readRefreshToken.jwtPass.username) {
-            console.log('Доступ предоставлен!')
             
             res.cookie('accessToken', readHeaderToken.newToken, {
                 httpOnly: true
@@ -26,7 +25,7 @@ async function checkTokenMiddleware(req, res, next) {
             res.json({"message":"Доступ заблокирован!"})
         }
     } catch (error) {
-        console.log(error)
+        logger.error(error)
         return {"message":"Доступ заблокирован!"}
     }
 }

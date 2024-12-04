@@ -6,7 +6,6 @@ function createAvatarFolder(name) {
     try {
         if (!fs.existsSync(paths)){
             fs.mkdirSync(paths, {recursive: true})
-            console.log(`папка ${paths} создана!`)
         }
         
     } catch (err) {

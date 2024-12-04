@@ -1,4 +1,5 @@
 const User = require("../db/models/userModel")
+const logger = require("../logging/logger")
 
 class UserService {
     async GetUsers () {
@@ -7,7 +8,7 @@ class UserService {
 
             return user
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }
     }
 
@@ -18,10 +19,11 @@ class UserService {
                     user_id: id
                 }
             })
-
+            logger.error('вывод пользователя')
             return user
         } catch (error) {
-            console.log(error)
+            logger.error(error)
+            logger.error(error)
         }
     }
 
@@ -35,7 +37,7 @@ class UserService {
 
             return user
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }
     }
 
@@ -44,7 +46,7 @@ class UserService {
 
             return {message: "вы добавили аватар!"}
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }
     }
 }

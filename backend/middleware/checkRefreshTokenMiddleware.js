@@ -3,6 +3,7 @@ const {readToken} = require('../utility/readToken')
 const dotenv = require('dotenv')
 const { readRefreshToken } = require('../utility/readRefreshToken')
 const User = require('../db/models/userModel')
+const logger = require('../logging/logger')
 dotenv.config()
 
 async function checkRefreshTokenMiddleware(req, res, next) {
@@ -13,19 +14,17 @@ async function checkRefreshTokenMiddleware(req, res, next) {
         // const refToken = await db.query("SELECT * FROM users WHERE login = $1", [readHeaderToken.jwtPass.username])
         const refToken = await User.findOne({where: {username: readHeaderToken.jwtPass.username}})
 
-        console.log(refToken.dataValues.ref_token)
         const readRefToken = readRefreshToken(refToken.dataValues.ref_token)
-        console.log(readRefToken)
 
         if (readRefToken == null) {
-            console.log('Срок истёк!')
+            logger.debug('Срок истёк!')
             res.redirect('/api/auth/exit')
         } else {
             next()
         }
 
     } catch (error) {
-        console.log(error)
+        logger.error(error)
         return {"message":"Ошибка!"}
     }
 }

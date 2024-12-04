@@ -1,4 +1,5 @@
 const AnimeGenreService = require('../services/animeGenreService.js')
+const logger = require("../logging/logger")
 
 class AnimeGenreController {
     async GetAll(req, res) {
@@ -6,7 +7,7 @@ class AnimeGenreController {
             const animeGenre = await AnimeGenreService.getAll(req.params.id)
             res.json({"Аниме": animeGenre})
         } catch (error) {
-            console.log(error) 
+            logger.error(error) 
         }
     }
 
@@ -16,7 +17,7 @@ class AnimeGenreController {
 
             res.json({"Жанр к аниме добавлен": animeGenre})
         } catch (error) {
-            console.log(error) 
+            logger.error(error) 
         }
     }
 
@@ -26,7 +27,7 @@ class AnimeGenreController {
 
             res.json({"message":genre})
         } catch (error) {
-            console.log(error) 
+            logger.error(error) 
         }
     }
 }

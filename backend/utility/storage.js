@@ -25,8 +25,6 @@ const storageConfig = multer.diskStorage({
         let readHeaderToken = readToken(headerToken)
         let userName = readHeaderToken.jwtPass.username
         
-        console.log(userName)
-
         switch (file.fieldname) {
             case 'anime_poster':
                 cb(null, `static/anime/${animeName}/anime_poster`)

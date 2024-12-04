@@ -1,4 +1,5 @@
 const Anime = require("../db/models/animeModel")
+const logger = require("../logging/logger")
 const { createAnimeFolder } = require("../utility/createAnimeFolder")
 
 class AnimeService {
@@ -8,7 +9,7 @@ class AnimeService {
             
             return anime
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }
     }
 
@@ -22,7 +23,7 @@ class AnimeService {
             
             return anime
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }
     }
 
@@ -44,7 +45,7 @@ class AnimeService {
             
             return anime
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }
     }
 
@@ -58,7 +59,7 @@ class AnimeService {
             
             return anime
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }
     }
 
@@ -68,7 +69,7 @@ class AnimeService {
 
             return anime
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }
     }
 
@@ -77,7 +78,7 @@ class AnimeService {
             const anime = 'аниме моменты созданы'
             return anime
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }
     }
 }

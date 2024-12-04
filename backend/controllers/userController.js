@@ -1,4 +1,5 @@
 const userService = require("../services/userService")
+const logger = require("../logging/logger")
 
 class UserController {
     async GetUsers (req, res) {
@@ -7,7 +8,7 @@ class UserController {
 
             res.json(user)
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }
     }
 
@@ -17,7 +18,7 @@ class UserController {
 
             res.json(user)
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }
     }
 
@@ -27,7 +28,7 @@ class UserController {
 
             res.json(user)
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }
     }
 
@@ -37,7 +38,7 @@ class UserController {
 
             res.json(avatar)
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }
     }
 

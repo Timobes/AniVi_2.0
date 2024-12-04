@@ -1,5 +1,6 @@
 const AnimeGenre = require("../db/models/animeGenreModel")
 const Genre = require("../db/models/genreModel")
+const logger = require("../logging/logger")
 
 class AnimeGenreService {
     async getAll(id) {
@@ -43,7 +44,7 @@ class AnimeGenreService {
 
             return allGenres
         } catch (error) {
-            console.log(error) 
+            logger.error(error) 
         }
     }
 
@@ -58,7 +59,7 @@ class AnimeGenreService {
 
             return animeGenre
         } catch (error) {
-            console.log(error) 
+            logger.error(error) 
         }
     }
 
@@ -72,7 +73,7 @@ class AnimeGenreService {
 
             return genre
         } catch (error) {
-            console.log(error) 
+            logger.error(error) 
         }
     }
 }

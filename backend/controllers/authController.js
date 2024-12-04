@@ -1,4 +1,5 @@
 const authService = require("../services/authService")
+const logger = require("../logging/logger")
 
 class AuthController {
 
@@ -8,7 +9,7 @@ class AuthController {
 
             res.json(user)
         } catch (error) {
-           console.log(error) 
+           logger.error(error) 
         }
     }
 
@@ -18,7 +19,7 @@ class AuthController {
 
             res.json(user)
         } catch (error) {
-           console.log(error) 
+           logger.error(error) 
         }
     }
 
@@ -28,7 +29,7 @@ class AuthController {
 
             res.json(user)
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }
     }
 
@@ -38,7 +39,7 @@ class AuthController {
 
             res.json(user)
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }
     }
 
@@ -48,7 +49,7 @@ class AuthController {
 
             res.json(user)
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }
     }
 }

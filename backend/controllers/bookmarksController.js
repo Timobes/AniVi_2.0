@@ -1,4 +1,6 @@
-const BookmarksService = require('../services/BookmarksService.js')
+const BookmarksService = require('../services/bookmarksService.js')
+const logger = require("../logging/logger")
+
 class BookmarksController {
     async getAll(req, res) {
         try {
@@ -6,7 +8,7 @@ class BookmarksController {
 
             res.json({"message":"test"})
         } catch (error) {
-            console.log(error) 
+            logger.error(error) 
         }
     }
 
@@ -16,7 +18,7 @@ class BookmarksController {
 
             res.json({"message":"test"})
         } catch (error) {
-            console.log(error) 
+            logger.error(error) 
         }
     }
 
@@ -26,7 +28,7 @@ class BookmarksController {
 
             res.json({message: book})
         } catch (error) {
-            console.log(error) 
+            logger.error(error) 
         }
     }
 
@@ -36,7 +38,7 @@ class BookmarksController {
 
             res.json({message:book})
         } catch (error) {
-            console.log(error) 
+            logger.error(error) 
         }
     }
 
@@ -46,7 +48,7 @@ class BookmarksController {
 
             res.json({"message":"test"})
         } catch (error) {
-            console.log(error) 
+            logger.error(error) 
         }
     }
 }

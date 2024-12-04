@@ -2,6 +2,7 @@ const AnimeEp = require("../db/models/animeEpModel")
 const Anime = require("../db/models/animeModel")
 const User = require("../db/models/userModel")
 const { readToken } = require("../utility/readToken")
+const logger = require("../logging/logger")
 
 class AnimeEpService {
     async getEp(body) {
@@ -10,14 +11,14 @@ class AnimeEpService {
 
             return ep
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }
     }
 
     async createEp(req) {
         try {
             const { name, num, animeId } = req.body
-            console.log(req.body)
+
             let headerToken = req.cookies.accessToken
             let readHeaderToken = readToken(headerToken)
             let userName = readHeaderToken.jwtPass.username
@@ -47,7 +48,7 @@ class AnimeEpService {
             return ep
 
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }
     }
 }

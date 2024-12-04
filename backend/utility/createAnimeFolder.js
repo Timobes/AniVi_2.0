@@ -9,7 +9,6 @@ function createAnimeFolder(name) {
         for (let i = 0; i < paths.length; i++) {
             if (!fs.existsSync(paths[i])){
                 fs.mkdirSync(paths[i], {recursive: true})
-                console.log(`папка ${paths[i]} создана!`)
             }
         }
         

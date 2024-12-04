@@ -29,5 +29,7 @@ const Bookmarks = db.define('bookmarks',{
     timestamps: false,
 })
 
+Bookmarks.hasMany(Anime, {foreignKey: 'anime_id'})
+Bookmarks.hasMany(User, {foreignKey: 'user_id'})
 
 module.exports = Bookmarks

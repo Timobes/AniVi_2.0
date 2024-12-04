@@ -1,4 +1,5 @@
 const animeEpService = require("../services/animeEpService")
+const logger = require("../logging/logger")
 
 class AnimeEpController {
     async getEp(req, res) {
@@ -7,7 +8,7 @@ class AnimeEpController {
 
             res.json({ "message": ep })
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }
     }
 
@@ -17,7 +18,7 @@ class AnimeEpController {
 
             res.json({ "message": ep })
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }
     }
 }

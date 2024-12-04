@@ -1,3 +1,4 @@
+const logger = require("../logging/logger")
 const genreService = require("../services/genreService")
 
 class GenreController {
@@ -7,7 +8,7 @@ class GenreController {
 
             res.json(genre)
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }
     }
 
@@ -17,7 +18,7 @@ class GenreController {
 
             res.json(genre)
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }
     }
 
@@ -27,7 +28,7 @@ class GenreController {
 
             res.json({"Жанр создан": genre})
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }
     }
 
@@ -37,7 +38,7 @@ class GenreController {
 
             res.json(genre)
         } catch (error) {
-            console.log(error)
+            logger.error(error)
         }
     }
 }

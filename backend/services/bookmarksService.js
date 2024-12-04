@@ -1,7 +1,7 @@
-const { where } = require("sequelize")
-const { model } = require("../db/db")
+const Anime = require("../db/models/animeModel")
 const Bookmarks = require("../db/models/bookMarksModel")
 const User = require("../db/models/userModel")
+const logger = require("../logging/logger")
 
 class BookmarksService {
     async getAll(req, res) {
@@ -10,7 +10,7 @@ class BookmarksService {
 
            return test
         } catch (error) {
-            console.log(error) 
+            logger.error(error) 
         }
     }
 
@@ -20,7 +20,7 @@ class BookmarksService {
 
            return test
         } catch (error) {
-            console.log(error) 
+            logger.error(error) 
         }
     }
 
@@ -35,31 +35,47 @@ class BookmarksService {
 
            return book
         } catch (error) {
-            console.log(error) 
+            logger.error(error) 
         }
     }
 
     async getBookOneUser(id) {
         try {
-            const book = await Bookmarks.getAll({
+            const book = await Bookmarks.findAll({
                 where: {
                     user_id: id
                 },
+            })
+
+            let mas = []
+
+            for (let i = 0; i < book.length; i++) {
+                mas.push(book[i].dataValues.anime_id)
+            }
+
+            const getAnimeName = await Bookmarks.findAll({
+                // where: {
+                //     user_id: id
+                // },
 
                 include: [
                     {
                         model: User,
-
-                        where: {
-                            
-                        }
-                    }
-                ]
+                        where: { user_id: id },
+                    },
+                    {
+                        model: Anime,
+                    },
+                ],
             })
+            // FIXME: TODO:
+            // const allBook = getAnimeName.map(animeName => {
+            //     return animeName.dataValues.genres.map(genre => genre.dataValues);
+            // }).flat(); 
 
-           return test
+           return getAnimeName
         } catch (error) {
-            console.log(error) 
+            logger.error(error)
         }
     }
 
@@ -69,7 +85,7 @@ class BookmarksService {
 
            return test
         } catch (error) {
-            console.log(error) 
+            logger.error(error) 
         }
     }
 }
