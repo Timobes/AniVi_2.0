@@ -5,15 +5,20 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "test": "mocha --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "chai": "^5.1.2",
+    "jest": "^29.7.0",
+    "mocha": "^11.0.1",
     "morgan": "^1.10.0",
     "nodemon": "^3.1.4",
     "sequelize-cli": "^6.6.2",
+    "supertest": "^7.0.0",
     "winston": "^3.17.0"
   },
   "dependencies": {
