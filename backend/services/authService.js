@@ -4,7 +4,6 @@ const { createJWTPassword } = require('../utility/createJWTPassword.js')
 const {createToken} = require('../utility/createToken.js')
 const { readJWTPassword } = require('../utility/readJWTPassword.js')
 const { readToken } = require('../utility/readToken.js')
-const { sendRes } = require('../utility/sendRes.js')
 
 class AuthService {
     async login(body) {
@@ -76,9 +75,7 @@ class AuthService {
         
         const rows = userProfile.dataValues
 
-        sendRes(res, 303, rows)
-
-        // return rows
+        return rows
     }
 
     async exit(res) {
