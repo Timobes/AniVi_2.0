@@ -11,11 +11,11 @@ class AuthService {
 
         if (pass != repeatPass) {
             
-            return {"message": "Пароли не совпадают!"}
+            return {status: 400, message: "Пароли не совпадают!"}
 
         } else if (username.length < 5 || pass.length < 5) {
             
-            return {"message": "Маленькая длина логина или пароля!"}
+            return {status: 400, message: "Маленькая длина логина или пароля!"} 
             
         } else {
             const jwtpass = createJWTPassword(pass)
@@ -33,7 +33,7 @@ class AuthService {
 
             const rows = createUser
 
-            return {"message": "Пользователь создан!", "accessToken": `${accessToken}`, rows}
+            return {status: 201, message: "Пользователь создан!", accessToken: `${accessToken}`, rows}
         }
     }
 

@@ -7,7 +7,7 @@ class AuthController {
         try {
             const user = await authService.login(req.body)
 
-            res.json(user)
+            res.status(user.status).json({message: user.message, rows: user.rows})
         } catch (error) {
            logger.error(error) 
         }
