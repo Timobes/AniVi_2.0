@@ -4,7 +4,6 @@ const { createJWTPassword } = require('../utility/createJWTPassword.js')
 const {createToken} = require('../utility/createToken.js')
 const { readJWTPassword } = require('../utility/readJWTPassword.js')
 const { readToken } = require('../utility/readToken.js')
-const { sendRes } = require('../utility/sendRes.js')
 
 class AuthService {
     async login(body) {
@@ -12,11 +11,11 @@ class AuthService {
 
         if (pass != repeatPass) {
             
-            return {"message": "Пароли не совпадают!"}
+            return {status: 400, message: "Пароли не совпадают!"}
 
         } else if (username.length < 5 || pass.length < 5) {
             
-            return {"message": "Маленькая длина логина или пароля!"}
+            return {status: 400, message: "Маленькая длина логина или пароля!"} 
             
         } else {
             const jwtpass = createJWTPassword(pass)
@@ -34,7 +33,7 @@ class AuthService {
 
             const rows = createUser
 
-            return {"message": "Пользователь создан!", "accessToken": `${accessToken}`, rows}
+            return {status: 201, message: "Пользователь создан!", accessToken: `${accessToken}`, rows}
         }
     }
 
@@ -76,9 +75,7 @@ class AuthService {
         
         const rows = userProfile.dataValues
 
-        sendRes(res, 303, rows)
-
-        // return rows
+        return rows
     }
 
     async exit(res) {

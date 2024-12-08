@@ -41,3 +41,5 @@ app.get('/', function(req, res){
 })
 
 app.listen(port, logger.info(`Backend is run ${port} port`))
+
+module.exports = app
