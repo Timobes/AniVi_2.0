@@ -41,49 +41,32 @@ class BookmarksService {
 
     async getBookOneUser(id) {
         try {
-            const book = await Bookmarks.findAll({
-                where: {
-                    user_id: id
-                },
-            })
-
-            let mas = []
-
-            for (let i = 0; i < book.length; i++) {
-                mas.push(book[i].dataValues.anime_id)
-            }
-
             const getAnimeName = await Bookmarks.findAll({
-                // where: {
-                //     user_id: id
-                // },
-
+                where: { user_id: id },
                 include: [
                     {
-                        model: User,
-                        where: { user_id: id },
-                    },
-                    {
                         model: Anime,
-                    },
+                        // attributes: ['anime_title_rus', 'anime_title_eng', 'anime_title_jap'],
+                    }
                 ],
+                attributes: ['book_id']
             })
-            // FIXME: TODO:
-            // const allBook = getAnimeName.map(animeName => {
-            //     return animeName.dataValues.genres.map(genre => genre.dataValues);
-            // }).flat(); 
 
-           return getAnimeName
+            return getAnimeName
         } catch (error) {
             logger.error(error)
         }
     }
 
-    async deleteBook(req, res) {
+    async deleteBook(id) {
         try {
-            const test = BookmarksService.test()
+            const book = await Bookmarks.destroy({
+                where: {
+                    book_id: id
+                }
+            })
 
-           return test
+            return book
         } catch (error) {
             logger.error(error) 
         }

@@ -196,3 +196,224 @@
 {"level":"info","message":"Админ прошёл проверку","timestamp":"2024-12-06T11:58:17.974Z"}
 {"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-06T12:35:58.029Z"}
 {"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T18:59:05.427Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:25:45.243Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:25:59.749Z"}
+{"level":"warn","message":"У вас недостаточно прав!","timestamp":"2024-12-08T19:25:59.949Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:26:25.490Z"}
+{"level":"warn","message":"У вас недостаточно прав!","timestamp":"2024-12-08T19:26:25.639Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:26:35.087Z"}
+{"level":"warn","message":"У вас недостаточно прав!","timestamp":"2024-12-08T19:26:35.255Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:26:39.363Z"}
+{"level":"warn","message":"У вас недостаточно прав!","timestamp":"2024-12-08T19:26:39.606Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:27:05.077Z"}
+{"level":"warn","message":"У вас недостаточно прав!","timestamp":"2024-12-08T19:27:05.273Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:27:52.327Z"}
+{"level":"warn","message":"У вас недостаточно прав!","timestamp":"2024-12-08T19:27:52.478Z"}
+{"level":"warn","message":"У вас недостаточно прав!","timestamp":"2024-12-08T19:28:38.616Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:28:50.916Z"}
+{"level":"info","message":"Админ прошёл проверку","timestamp":"2024-12-08T19:28:51.051Z"}
+{"level":"warn","message":"У вас недостаточно прав!","timestamp":"2024-12-08T19:28:58.722Z"}
+{"level":"warn","message":"У вас недостаточно прав!","timestamp":"2024-12-08T19:29:00.285Z"}
+{"level":"warn","message":"У вас недостаточно прав!","timestamp":"2024-12-08T19:29:01.974Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:29:10.511Z"}
+{"level":"info","message":"Админ прошёл проверку","timestamp":"2024-12-08T19:29:11.788Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:29:20.498Z"}
+{"level":"warn","message":"У вас недостаточно прав!","timestamp":"2024-12-08T19:29:22.163Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:29:31.280Z"}
+{"level":"warn","message":"У вас недостаточно прав!","timestamp":"2024-12-08T19:29:32.725Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:29:44.508Z"}
+{"level":"warn","message":"У вас недостаточно прав!","timestamp":"2024-12-08T19:29:46.177Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:29:54.714Z"}
+{"level":"warn","message":"У вас недостаточно прав!","timestamp":"2024-12-08T19:29:56.201Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:30:07.907Z"}
+{"level":"info","message":"Админ прошёл проверку","timestamp":"2024-12-08T19:30:09.505Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:30:17.858Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:30:20.176Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:30:21.077Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:30:32.691Z"}
+{"level":"info","message":"Админ прошёл проверку","timestamp":"2024-12-08T19:30:32.885Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:31:22.130Z"}
+{"level":"info","message":"Админ прошёл проверку","timestamp":"2024-12-08T19:31:22.282Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:31:31.763Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:31:42.813Z"}
+{"level":"error","name":"SequelizeHostNotFoundError","original":{"code":"ENOTFOUND","errno":-3008,"hostname":"localhosts","syscall":"getaddrinfo"},"parent":{"code":"ENOTFOUND","errno":-3008,"hostname":"localhosts","syscall":"getaddrinfo"},"timestamp":"2024-12-08T19:31:45.104Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:31:49.171Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:34:48.443Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:35:49.962Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:36:15.721Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:36:21.649Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:38:52.987Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:42:05.019Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:42:13.091Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:42:26.211Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:42:42.902Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:43:06.182Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:43:10.500Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:43:56.656Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:44:43.975Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:44:56.005Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:44:59.353Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:45:01.208Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:45:05.150Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:49:56.766Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T19:57:23.398Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:01:01.194Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:02:55.205Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:03:41.060Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:04:28.612Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:05:45.879Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:08:02.112Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:08:44.036Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:09:05.970Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:09:22.951Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:09:53.353Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:09:59.012Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:11:49.889Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:12:18.021Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:12:34.591Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:13:26.455Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:13:35.556Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:13:40.982Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:13:44.215Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:13:46.526Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:13:50.783Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:13:55.696Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:16:20.038Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:16:41.155Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:17:23.472Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:17:34.688Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:17:40.393Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:17:42.956Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:18:05.951Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:18:39.427Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:23:36.543Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:25:39.142Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:31:46.636Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:32:45.937Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:33:22.299Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:33:33.482Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:38:08.674Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:39:06.889Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:39:46.962Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:40:16.962Z"}
+{"level":"error","message":"вывод пользователя","timestamp":"2024-12-08T20:40:25.204Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:41:35.177Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:42:09.092Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:42:39.835Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:43:03.492Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:43:13.680Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:43:26.767Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:43:42.884Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:43:57.720Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:44:39.287Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T20:45:01.919Z"}
+{"level":"error","message":"вывод пользователя","timestamp":"2024-12-08T20:45:05.428Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T21:14:33.046Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T21:14:38.584Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T21:31:32.455Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T21:31:41.465Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T21:31:48.319Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T21:31:49.215Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T21:31:57.179Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T21:31:59.576Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-08T21:32:00.789Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T09:14:41.153Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T09:18:50.463Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T09:18:55.473Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T09:19:04.016Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:14:32.313Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:14:57.367Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:15:15.271Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:17:12.928Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:18:15.061Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:18:20.398Z"}
+{"level":"error","timestamp":"2024-12-09T12:18:28.106Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:18:59.837Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:19:16.420Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:31:39.389Z"}
+{"level":"info","message":"","timestamp":"2024-12-09T12:31:41.773Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:31:58.648Z"}
+{"level":"info","message":[{"anime_id":1,"animes":[{"anime_id":1,"anime_title_eng":"text    1","anime_title_jap":"text    1","anime_title_rus":"text    1","description":"desc 1","poster_url":"https://shikimori.one/animes/57334-dandadan","user_id":1,"year":"2005-09-08T20:00:00.000Z"}],"book_id":1,"user_id":1,"users":[{"bio":null,"createdAt":"2024-11-19T13:20:35.268Z","logo":null,"pass":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXNzIjoicGFzc3dvcmQiLCJpYXQiOjE3MzIwMjI0MzV9.Ql7cX783Mckv1o8wcpEsRZHDCbow_UWA4Hn5JR0z54Y","ref_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzMzNzQ2NjQ4LCJleHAiOjE3MzYzMzg2NDh9.p1fDeSL3amPYSWUSDArOuXlcFK2K1I569Ny3Wwm-r9U","role":9,"updatedAt":"2024-12-09T12:17:28.988Z","user_id":1,"username":"admin"}]}],"timestamp":"2024-12-09T12:32:00.147Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:32:09.888Z"}
+{"level":"info","timestamp":"2024-12-09T12:32:11.298Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:32:16.666Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:32:27.226Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:32:54.187Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:33:03.582Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:33:14.007Z"}
+{"level":"error","timestamp":"2024-12-09T12:33:15.170Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:33:18.546Z"}
+{"level":"error","timestamp":"2024-12-09T12:33:19.794Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:33:24.291Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:33:43.826Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:33:48.613Z"}
+{"level":"error","timestamp":"2024-12-09T12:33:49.892Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:34:11.316Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:34:16.332Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:34:53.393Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:35:05.381Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:35:48.359Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:36:50.562Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:37:15.504Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:38:29.885Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:38:46.551Z"}
+{"level":"error","timestamp":"2024-12-09T12:38:48.766Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:38:53.370Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:39:13.019Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:39:27.406Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:39:52.578Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:40:04.228Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:40:29.257Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:41:42.448Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:41:58.535Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:42:57.845Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:43:19.133Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:43:27.358Z"}
+{"level":"error","timestamp":"2024-12-09T12:43:32.551Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:43:45.087Z"}
+{"level":"error","timestamp":"2024-12-09T12:43:55.422Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:44:02.357Z"}
+{"level":"error","timestamp":"2024-12-09T12:44:03.632Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:44:48.510Z"}
+{"level":"error","timestamp":"2024-12-09T12:44:50.257Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:45:08.952Z"}
+{"level":"error","timestamp":"2024-12-09T12:45:10.222Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:45:15.382Z"}
+{"level":"error","timestamp":"2024-12-09T12:45:16.496Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:45:26.181Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:45:45.163Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:45:48.974Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:47:11.481Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:47:24.058Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:47:37.656Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:47:44.496Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:48:08.053Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:48:28.338Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:48:37.077Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:48:38.442Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:49:43.082Z"}
+{"level":"error","name":"SequelizeDatabaseError","original":{"code":"42703","file":"parse_relation.c","length":139,"line":"3721","name":"error","position":"120","routine":"errorMissingColumn","severity":"ОШИБКА","sql":"SELECT \"bookmarks\".\"book_id\", \"bookmarks\".\"user_id\", \"bookmarks\".\"anime_id\", \"animes\".\"anime_id\" AS \"animes.anime_id\", \"animes\".\"book_id\" AS \"animes.book_id\" FROM \"bookmarks\" AS \"bookmarks\" INNER JOIN \"animes\" AS \"animes\" ON \"bookmarks\".\"book_id\" = \"animes\".\"anime_id\" AND \"animes\".\"anime_id\" IN (1, 2);"},"parameters":{},"parent":{"code":"42703","file":"parse_relation.c","length":139,"line":"3721","name":"error","position":"120","routine":"errorMissingColumn","severity":"ОШИБКА","sql":"SELECT \"bookmarks\".\"book_id\", \"bookmarks\".\"user_id\", \"bookmarks\".\"anime_id\", \"animes\".\"anime_id\" AS \"animes.anime_id\", \"animes\".\"book_id\" AS \"animes.book_id\" FROM \"bookmarks\" AS \"bookmarks\" INNER JOIN \"animes\" AS \"animes\" ON \"bookmarks\".\"book_id\" = \"animes\".\"anime_id\" AND \"animes\".\"anime_id\" IN (1, 2);"},"sql":"SELECT \"bookmarks\".\"book_id\", \"bookmarks\".\"user_id\", \"bookmarks\".\"anime_id\", \"animes\".\"anime_id\" AS \"animes.anime_id\", \"animes\".\"book_id\" AS \"animes.book_id\" FROM \"bookmarks\" AS \"bookmarks\" INNER JOIN \"animes\" AS \"animes\" ON \"bookmarks\".\"book_id\" = \"animes\".\"anime_id\" AND \"animes\".\"anime_id\" IN (1, 2);","timestamp":"2024-12-09T12:49:44.443Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:49:55.631Z"}
+{"level":"error","name":"SequelizeDatabaseError","original":{"code":"42703","file":"parse_relation.c","length":139,"line":"3721","name":"error","position":"120","routine":"errorMissingColumn","severity":"ОШИБКА","sql":"SELECT \"bookmarks\".\"book_id\", \"bookmarks\".\"user_id\", \"bookmarks\".\"anime_id\", \"animes\".\"anime_id\" AS \"animes.anime_id\", \"animes\".\"book_id\" AS \"animes.book_id\" FROM \"bookmarks\" AS \"bookmarks\" INNER JOIN \"animes\" AS \"animes\" ON \"bookmarks\".\"book_id\" = \"animes\".\"anime_id\" AND \"animes\".\"anime_id\" IN (1, 2);"},"parameters":{},"parent":{"code":"42703","file":"parse_relation.c","length":139,"line":"3721","name":"error","position":"120","routine":"errorMissingColumn","severity":"ОШИБКА","sql":"SELECT \"bookmarks\".\"book_id\", \"bookmarks\".\"user_id\", \"bookmarks\".\"anime_id\", \"animes\".\"anime_id\" AS \"animes.anime_id\", \"animes\".\"book_id\" AS \"animes.book_id\" FROM \"bookmarks\" AS \"bookmarks\" INNER JOIN \"animes\" AS \"animes\" ON \"bookmarks\".\"book_id\" = \"animes\".\"anime_id\" AND \"animes\".\"anime_id\" IN (1, 2);"},"sql":"SELECT \"bookmarks\".\"book_id\", \"bookmarks\".\"user_id\", \"bookmarks\".\"anime_id\", \"animes\".\"anime_id\" AS \"animes.anime_id\", \"animes\".\"book_id\" AS \"animes.book_id\" FROM \"bookmarks\" AS \"bookmarks\" INNER JOIN \"animes\" AS \"animes\" ON \"bookmarks\".\"book_id\" = \"animes\".\"anime_id\" AND \"animes\".\"anime_id\" IN (1, 2);","timestamp":"2024-12-09T12:49:56.581Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T12:50:02.838Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T15:00:30.540Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T15:03:16.993Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T15:04:00.299Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T15:04:03.296Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T15:04:05.808Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T15:04:10.463Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T15:05:48.736Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T15:05:54.918Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T15:06:11.555Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T15:10:24.379Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T15:11:48.801Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T15:11:53.694Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T15:11:59.101Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T15:12:18.769Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T15:12:49.756Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T15:13:02.830Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T15:13:31.275Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T15:13:38.268Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T15:13:46.293Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T15:13:52.982Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-09T15:15:12.409Z"}

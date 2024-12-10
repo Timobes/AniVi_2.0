@@ -44,9 +44,9 @@ class BookmarksController {
 
     async deleteBook(req, res) {
         try {
-            const test = BookmarksService.test()
+            const book = BookmarksService.deleteBook(req.params.id)
 
-            res.json({"message":"test"})
+            res.json({message:book})
         } catch (error) {
             logger.error(error) 
         }
