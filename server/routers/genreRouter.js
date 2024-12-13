@@ -3,16 +3,68 @@ const genreController = require('../controllers/genreController')
 
 const genreRouter = new Router()
 
-// get all 
+/**
+ * @swagger
+ * /api/genre:
+ *   get:
+ *     summary: Получить все жанры
+ *     tags:
+ *       - Genre
+ *     responses:
+ *       200:
+ *         description: Успешный ответ
+ */
 genreRouter.get('/', genreController.GetGenre)
 
-// get one
+/**
+ * @swagger
+ * /api/genre/{id}:
+ *   get:
+ *     summary: Получить жанр по id
+ *     parameters: 
+ *       - name: id
+ *         in: path
+ *         required: true
+ *         schema: 
+ *           type: integer
+ *     tags:
+ *       - Genre
+ *     responses:
+ *       200:
+ *         description: Успешный ответ
+ */
 genreRouter.get('/:id', genreController.GetOneGenre)
 
-// create
+/**
+ * @swagger
+ * /api/genre:
+ *   post:
+ *     summary: Создать новый жанр
+ *     tags:
+ *       - Genre
+ *     responses:
+ *       201:
+ *         description: Успешное создание жанра
+ */
 genreRouter.post('/', genreController.CreateGenre)
 
-// delete on id
+/**
+ * @swagger
+ * /api/genre/{id}:
+ *   delete:
+ *     summary: Удалить жанр по id
+ *     parameters: 
+ *       - name: id
+ *         in: path
+ *         required: true
+ *         schema: 
+ *           type: integer
+ *     tags:
+ *       - Genre
+ *     responses:
+ *       204:
+ *         description: Успешное удаление
+ */
 genreRouter.delete('/:id', genreController.DeleteGenre)
 
 module.exports = genreRouter

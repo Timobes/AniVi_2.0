@@ -1,24 +1,15 @@
 const User = require('../db/models/userModel.js')
 const { createAvatarFolder } = require('../utility/createAvatarFolder.js')
-const { createJWTPassword } = require('../utility/createJWTPassword.js')
+const { createPassword } = require('../utility/createPassword.js')
 const {createToken} = require('../utility/createToken.js')
-const { readJWTPassword } = require('../utility/readJWTPassword.js')
+const { readPassword } = require('../utility/readPassword.js')
 const { readToken } = require('../utility/readToken.js')
 
 class AuthService {
     async login(body) {
-        const {username, pass, repeatPass} = body
+        const {username, pass} = body
 
-        if (pass != repeatPass) {
-            
-            return {status: 400, message: "Пароли не совпадают!"}
-
-        } else if (username.length < 5 || pass.length < 5) {
-            
-            return {status: 400, message: "Маленькая длина логина или пароля!"} 
-            
-        } else {
-            const jwtpass = createJWTPassword(pass)
+            const jwtpass = await createPassword(pass)
             
             const accessToken = createToken(username, '30m')
             const refreshToken = createToken(username, '30d')
@@ -34,7 +25,7 @@ class AuthService {
             const rows = createUser
 
             return {status: 201, message: "Пользователь создан!", accessToken: `${accessToken}`, rows}
-        }
+        
     }
 
     async auth(body, res) {
@@ -42,9 +33,10 @@ class AuthService {
 
         const nickname = await User.findOne({where: {username: username}})
         const isPass = nickname.dataValues.pass
-        const readPass = readJWTPassword(isPass)
 
-        if(pass == readPass.pass) {
+        const testPass = await readPassword(pass, isPass) 
+        
+        if(testPass) {
             const accessToken = createToken(username, '30m')
             const refreshToken = createToken(username, '30d')
             
@@ -54,7 +46,8 @@ class AuthService {
                 httpOnly: true
             })
             
-            return {"message": `Добро пожаловать ${username}!`}
+            return {status: 201, message: `Добро пожаловать ${username}!`}
+
         
         } else {
 
@@ -64,7 +57,8 @@ class AuthService {
     }
 
     async admin(req) {
-        return {"message": "Добро пожаловать Админ!"}
+        return {status: 201, message: "Добро пожаловать Админ!"}
+        
     }
 
     async profile(req, res) {
@@ -75,7 +69,7 @@ class AuthService {
         
         const rows = userProfile.dataValues
 
-        return rows
+        return {status: 201, rows}
     }
 
     async exit(res) {

@@ -40,10 +40,37 @@ userRouter.get('/', checkTokenMiddleware, checkRefreshTokenMiddleware, checkAdmi
  */
 userRouter.get('/:id', userController.GetOneUser)
 
-// Delete user on id
+
+/**
+ * @swagger
+ * /api/user/{id}:
+ *   delete:
+ *     summary: Удалить пользователя по id
+ *     parameters: 
+ *       - name: id
+ *         in: path
+ *         required: true
+ *         schema: 
+ *           type: integer
+ *     tags:
+ *       - User
+ *     responses:
+ *       204:
+ *         description: Успешное удаление
+ */
 userRouter.delete('/:id', checkTokenMiddleware, checkRefreshTokenMiddleware, checkAdminMiddleware, userController.DeleteUser)
 
-// Submit user avatar
+/**
+ * @swagger
+ * /api/user/avatar:
+ *   post:
+ *     summary: Загрузить аватар пользователя
+ *     tags:
+ *       - User
+ *     responses:
+ *       201:
+ *         description: Успешная загрузка аватара
+ */
 userRouter.post('/avatar', upload.single('avatar'), userController.CreateAvatar)
 
 module.exports = userRouter

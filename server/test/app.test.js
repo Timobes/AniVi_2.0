@@ -18,15 +18,11 @@ function generateRandomString(length) {
     return result;
 }
 
-
-
-
-
 describe('/anime', () => {
     it('/get', (done) => {
         request(app)
             .get('/api/anime')
-            .expect(200)
+            .expect(201)
             .end((err, res) => {
                 if (err) return done(err)
                 done() 
@@ -36,7 +32,7 @@ describe('/anime', () => {
     it('/get one', (done) => {
         request(app)
             .get('/api/anime/1')
-            .expect(200)
+            .expect(201)
             .end((err, res) => {
                 if (err) return done(err)
                 done() 
@@ -45,8 +41,8 @@ describe('/anime', () => {
 });
 
 describe('/auth', function() {
-    const randomName = generateRandomString(7)
-    const randomPass = generateRandomString(7)
+    const randomName = generateRandomString(8)
+    const randomPass = generateRandomString(8)
 
     it('login', (done) => {
         request(app)
@@ -64,7 +60,7 @@ describe('/auth', function() {
         agent
             .post('/api/auth/auth')
             .send({username: `${process.env.TEST_ADMIN_NAME}`, pass: `${process.env.TEST_ADMIN_PASS}`})
-            .expect(200)
+            .expect(201)
             .end((err, res) => {
                 if (err) return done(err)
 
@@ -75,7 +71,7 @@ describe('/auth', function() {
     it('is admin', (done) => {
         agent
             .post('/api/auth/admin')
-            .expect(200)
+            .expect(201)
             .end((err, res) => {
                 if (err) return done(err)
 

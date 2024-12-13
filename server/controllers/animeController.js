@@ -6,7 +6,7 @@ class AnimeController {
         try {
             const anime = await animeService.getAllAnime()
 
-            res.json(anime)
+            res.status(anime.status).json({anime: anime.anime})
         } catch (error) {
             logger.error(error)
         }        
@@ -16,7 +16,7 @@ class AnimeController {
         try {
             const anime = await animeService.getOneAnime(req.params.id)
 
-            res.json(anime)
+            res.status(anime.status).json({anime: anime.anime})
         } catch (error) {
             logger.error(error)
         }        

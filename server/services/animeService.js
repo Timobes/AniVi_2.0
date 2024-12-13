@@ -6,8 +6,8 @@ class AnimeService {
     async getAllAnime() {
         try {
             const anime = await Anime.findAll()
-            
-            return anime
+
+            return {status: 201, anime}
         } catch (error) {
             logger.error(error)
         }
@@ -21,7 +21,7 @@ class AnimeService {
                 }
             })
             
-            return anime
+            return {status: 201, anime}
         } catch (error) {
             logger.error(error)
         }

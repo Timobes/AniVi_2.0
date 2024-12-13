@@ -17,7 +17,7 @@ class AuthController {
         try {
             const user = await authService.auth(req.body, res)
 
-            res.json(user)
+            res.status(user.status).json({message: user.message})
         } catch (error) {
            logger.error(error) 
         }
@@ -27,7 +27,7 @@ class AuthController {
         try {
             const user = await authService.admin(req)
 
-            res.json(user)
+            res.status(user.status).json({message: user.message})
         } catch (error) {
             logger.error(error)
         }
@@ -37,7 +37,7 @@ class AuthController {
         try {
             const user = await authService.profile(req, res)
 
-            res.json(user)
+            res.status(user.status).json({rows: user.rows})
         } catch (error) {
             logger.error(error)
         }
