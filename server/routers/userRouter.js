@@ -7,6 +7,23 @@ const upload  = require('../utility/storage')
 
 const userRouter = new Router()
 
+
+/**
+ * @swagger
+ * /api/user/avatar:
+ *   get:
+ *     summary: Загрузить аватар пользователя
+ *     tags:
+ *       - User
+ *     responses:
+ *       201:
+ *         description: Успешная получение аватара
+ */
+            
+userRouter.get('/avatar/:id', userController.GetAvatar)
+
+
+
 /**
  * @swagger
  * /api/user:
@@ -71,6 +88,8 @@ userRouter.delete('/:id', checkTokenMiddleware, checkRefreshTokenMiddleware, che
  *       201:
  *         description: Успешная загрузка аватара
  */
-userRouter.post('/avatar', upload.single('avatar'), userController.CreateAvatar)
+userRouter.post('/avatar', checkTokenMiddleware, checkRefreshTokenMiddleware, upload.single('avatar'), userController.CreateAvatar)
+
+
 
 module.exports = userRouter

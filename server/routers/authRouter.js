@@ -10,12 +10,12 @@ const authRouter = new Router()
  * @swagger
  * /api/auth/login:
  *   post:
- *     summary: Вход пользователя
+ *     summary: РЕГИСТРАЦИЯ пользователя
  *     tags:
  *       - Auth
  *     responses:
  *       200:
- *         description: Успешный вход
+ *         description: Успешная РЕГИСТРАЦИЯ
  */
 authRouter.post('/login', userValidationRules(), validate, authController.login)
 

@@ -1,5 +1,8 @@
 const User = require("../db/models/userModel")
 const logger = require("../logging/logger")
+const { readToken } = require("../utility/readToken")
+const fs = require('fs')
+const path = require('path')
 
 class UserService {
     async GetUsers () {
@@ -45,6 +48,44 @@ class UserService {
         try {
 
             return {message: "вы добавили аватар!"}
+        } catch (error) {
+            logger.error(error)
+        }
+    }
+
+    async GetAvatar (req) {
+        try {
+            // let headerToken = req.cookies.accessToken
+            // let readHeaderToken = readToken(headerToken)
+            // let userName = readHeaderToken.jwtPass.username
+            
+            // let pathFile = path.join(__dirname, `../static/users/${userName}/avatar.jpeg`)
+
+            const id = req.params.id
+
+            const user = await User.findOne({
+                attributes: ['username'],
+                
+                where: {
+                    user_id: id
+                }
+            })
+
+            const userName = user.dataValues.username
+
+            let file = `http://localhost:8080/users/${userName}/avatar.jpeg`
+
+            // fs.access(pathFile, fs.constants.F_OK, (err) => {
+            //     if (err) {
+            //         console.log('lox')
+            //         return {message: ""}
+            //     } else {
+            //         return {"message": `${file}`}
+            //     }
+            // });
+            
+
+            return {message: `${file}`}
         } catch (error) {
             logger.error(error)
         }

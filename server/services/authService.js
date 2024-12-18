@@ -7,24 +7,32 @@ const { readToken } = require('../utility/readToken.js')
 
 class AuthService {
     async login(body) {
-        const {username, pass} = body
+        const {username, pass, repeatPass} = body
 
-            const jwtpass = await createPassword(pass)
+            // const isUser = await User.findOne({where:{ username: username}}) 
+            // console.log(isUser.dataValues.username)
             
-            const accessToken = createToken(username, '30m')
-            const refreshToken = createToken(username, '30d')
+            // if (isUser.dataValues.username) {
+            //     return {status: 401, message: "Такой пользователь уже есть!"}
+            // } else {
 
-            const createUser = await User.create({
-                username: username,
-                pass: jwtpass,
-                ref_token: refreshToken
-            })
+                const jwtpass = await createPassword(pass)
+                
+                const accessToken = createToken(username, '30m')
+                const refreshToken = createToken(username, '30d')
 
-            createAvatarFolder(username)
+                const createUser = await User.create({
+                    username: username,
+                    pass: jwtpass,
+                    ref_token: refreshToken
+                })
 
-            const rows = createUser
+                createAvatarFolder(username)
 
-            return {status: 201, message: "Пользователь создан!", accessToken: `${accessToken}`, rows}
+                const rows = createUser
+
+                return {status: 201, message: "Пользователь создан!", accessToken: `${accessToken}`, rows}
+            // }
         
     }
 
