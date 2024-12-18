@@ -1,8 +1,8 @@
 const User = require("../db/models/userModel")
 const logger = require("../logging/logger")
 const { readToken } = require("../utility/readToken")
-const fs = require('fs')
-const path = require('path')
+// const fs = require('fs')
+// const path = require('path')
 
 class UserService {
     async GetUsers () {
@@ -84,6 +84,20 @@ class UserService {
             //     }
             // });
             
+
+            return {message: `${file}`}
+        } catch (error) {
+            logger.error(error)
+        }
+    }
+
+    async GetMyAvatar (req) {
+        try {
+            let headerToken = req.cookies.accessToken
+            let readHeaderToken = readToken(headerToken)
+            let userName = readHeaderToken.jwtPass.username
+
+            let file = `http://localhost:8080/users/${userName}/avatar.jpeg`
 
             return {message: `${file}`}
         } catch (error) {

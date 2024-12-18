@@ -27,4 +27,14 @@ export class AuthApi {
         
         return res.data
     }
+
+    async exit() {
+        const res = await axios.get(`${BACKURL}auth/exit`, {
+            withCredentials: true
+        })
+
+        console.log(res.data)
+
+        return res.data
+    }
 }

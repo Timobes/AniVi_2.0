@@ -51,6 +51,17 @@ class UserController {
             logger.error(error)
         }
     }
+
+    
+    async GetMyAvatar (req, res) {
+        try {
+            const avatar = await userService.GetMyAvatar(req)
+
+            res.json(avatar)
+        } catch (error) {
+            logger.error(error)
+        }
+    }
 }
 
 module.exports = new UserController

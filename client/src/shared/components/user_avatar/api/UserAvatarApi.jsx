@@ -5,8 +5,8 @@ import axios from "axios";
 const BACKURL = 'http://localhost:8080/api/'
 
 export class AvatarUserApi {
-    async getAvatar (id) {
-        const res = await axios.get(`${BACKURL}user/avatar/${id}`, {
+    async getMyAvatar () {
+        const res = await axios.get(`${BACKURL}user/my/avatar/`, {
             withCredentials: true,
         })
         return res.data

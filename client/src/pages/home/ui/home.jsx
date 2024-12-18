@@ -7,16 +7,16 @@ import './style.css'
 export const HomePage = () => {
     return (  
         <>
-            <Header />
+            {/* <Header /> */}
             <main>
-                <RegisterModal />
+                {/* <RegisterModal /> */}
                 <hr />
-                <LoginModal />
-                <hr />
-                <hr />
+                {/* <LoginModal /> */}
                 <hr />
                 <hr />
-                <Profile />
+                <hr />
+                <hr />
+                {/* <Profile /> */}
             </main>
         </>
     );

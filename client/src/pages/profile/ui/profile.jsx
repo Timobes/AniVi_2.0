@@ -1,10 +1,14 @@
 import { useEffect, useState } from "react";
 import { ProfileApi } from "../api/ProfileApi";
+import { ExitBtn } from "../../../features/auth/components/exitBtn";
+import { useAuthStore } from "../../../app/state/store";
 
 export const Profile = () => {
     const [data, setData] = useState([])
 
     const profileApi = new ProfileApi();
+
+    const stateAuth = useAuthStore((state) => state.isAuth)
 
     useEffect(() => {
         const fetchProfile = async () => {
@@ -31,7 +35,9 @@ export const Profile = () => {
                         <br />
                         Bio = {user.bio},
                         <br />
-                        Role = {user.role}   
+                        Role = {user.role}
+                        <br />
+                        <ExitBtn />   
                     </div>
                 ))
             }

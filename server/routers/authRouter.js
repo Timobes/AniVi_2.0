@@ -69,6 +69,6 @@ authRouter.get('/profile', checkTokenMiddleware, checkRefreshTokenMiddleware, au
  *       200:
  *         description: Успешный выход
  */
-authRouter.get('/exit', checkTokenMiddleware, authController.exit)
+authRouter.get('/exit', checkTokenMiddleware, checkRefreshTokenMiddleware, authController.exit)
 
 module.exports = authRouter

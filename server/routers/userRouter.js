@@ -23,6 +23,9 @@ const userRouter = new Router()
 userRouter.get('/avatar/:id', userController.GetAvatar)
 
 
+            
+userRouter.get('/my/avatar/', userController.GetMyAvatar)
+
 
 /**
  * @swagger
