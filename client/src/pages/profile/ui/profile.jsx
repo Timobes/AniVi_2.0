@@ -14,9 +14,7 @@ export const Profile = () => {
         const fetchProfile = async () => {
             try {
                 const res = await profileApi.getProfile();
-                setData(prevData => [...prevData, res.rows])
-                console.log('response = ', res.rows);
-                console.log('data = ', data);
+                setData([res.rows])
             } catch (error) {
                 console.error('Error fetching profile:', error);
             }
@@ -25,21 +23,26 @@ export const Profile = () => {
         fetchProfile(); 
     }, [])
 
+    console.log("data = ", data)
 
     return (  
         <div>
             {
-                data.map((user) => (
-                    <div key={user.user_id}>
-                        Name = {user.username},
-                        <br />
-                        Bio = {user.bio},
-                        <br />
-                        Role = {user.role}
-                        <br />
-                        <ExitBtn />   
-                    </div>
-                ))
+                stateAuth 
+                    ?
+                        data.map((user) => (
+                            <div key={user.user_id}>
+                                Name = {user.username},
+                                <br />
+                                Bio = {user.bio},
+                                <br />
+                                Role = {user.role}
+                                <br />
+                                <ExitBtn />   
+                            </div>
+                        ))
+                    :
+                            <h1>Вы не вошли в аккаунт!</h1>
             }
         </div>
     );

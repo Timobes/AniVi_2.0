@@ -1055,3 +1055,26 @@
 {"level":"error","timestamp":"2024-12-18T21:18:17.199Z"}
 {"level":"error","timestamp":"2024-12-18T21:20:11.570Z"}
 {"level":"error","timestamp":"2024-12-18T21:22:29.949Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-18T21:22:35.588Z"}
+{"level":"error","timestamp":"2024-12-18T21:22:43.319Z"}
+{"level":"error","timestamp":"2024-12-18T21:26:33.440Z"}
+{"level":"error","timestamp":"2024-12-18T21:26:36.645Z"}
+{"level":"error","timestamp":"2024-12-18T21:26:36.647Z"}
+{"level":"error","timestamp":"2024-12-18T21:27:11.777Z"}
+{"level":"error","timestamp":"2024-12-18T21:27:27.195Z"}
+{"level":"error","timestamp":"2024-12-18T21:27:29.008Z"}
+{"level":"error","timestamp":"2024-12-18T21:27:29.015Z"}
+{"level":"error","timestamp":"2024-12-18T21:27:31.292Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-19T10:01:42.571Z"}
+{"level":"error","timestamp":"2024-12-19T10:02:18.280Z"}
+{"level":"error","timestamp":"2024-12-19T10:12:50.169Z"}
+{"level":"error","timestamp":"2024-12-19T10:15:55.881Z"}
+{"level":"error","timestamp":"2024-12-19T11:15:49.776Z"}
+{"level":"error","timestamp":"2024-12-19T11:15:49.778Z"}
+{"level":"error","timestamp":"2024-12-19T11:15:51.071Z"}
+{"level":"error","timestamp":"2024-12-19T11:44:11.304Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2024-12-19T11:44:40.664Z"}
+{"level":"error","timestamp":"2024-12-19T11:45:50.671Z"}
+{"level":"info","message":"Админ прошёл проверку","timestamp":"2024-12-19T11:46:35.031Z"}
+{"level":"info","message":"Админ прошёл проверку","timestamp":"2024-12-19T11:46:44.126Z"}
+{"level":"info","message":"Админ прошёл проверку","timestamp":"2024-12-19T11:46:50.185Z"}

@@ -4,6 +4,7 @@ import { Header } from "../../shared/components/header";
 import { Profile } from "../../pages/profile";
 import { RegisterModal } from "../../features/auth/components/registerModal";
 import { LoginModal } from "../../features/auth/components/loginModal";
+import { AnimePage } from "../../pages/animePage";
 
 export const Router = () => {
     return (  
@@ -18,6 +19,9 @@ export const Router = () => {
                 {/* auth */}
                 <Route path="/reg" element={<RegisterModal />} />
                 <Route path="/login" element={<LoginModal />} />
+
+                {/* anime */}
+                <Route path="/anime/:id" element={<AnimePage />} />
 
                 <Route path="*" element={<h1>Error!</h1>} />
             </Routes>

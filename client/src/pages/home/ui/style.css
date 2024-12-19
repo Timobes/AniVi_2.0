@@ -7,3 +7,14 @@ main {
     color: #fff;
 
 }
+
+.anime-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    column-gap: 20px;
+    row-gap: 20px;
+}
