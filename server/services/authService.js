@@ -31,7 +31,7 @@ class AuthService {
 
                 const rows = createUser
 
-                return {status: 201, message: "Пользователь создан!", accessToken: `${accessToken}`, rows}
+                return {message: "Пользователь создан!"}
             // }
         
     }
@@ -54,18 +54,18 @@ class AuthService {
                 httpOnly: true
             })
             
-            return {status: 201, message: `Добро пожаловать ${username}!`}
+            return {message: `Добро пожаловать ${username}!`}
 
         
         } else {
 
-            return {"message": "Неправильный пароль!"}
+            return {message: "Неправильный пароль!"}
 
         }
     }
 
     async admin(req) {
-        return {status: 201, message: "Добро пожаловать Админ!"}
+        return {message: "Добро пожаловать Админ!"}
         
     }
 
@@ -77,12 +77,12 @@ class AuthService {
         
         const rows = userProfile.dataValues
 
-        return {status: 201, rows}
+        return {rows}
     }
 
     async exit(res) {
         res.clearCookie('accessToken')
-        return {"mesage": "Вы вышли из аккаунта!"}
+        return {message: "Вы вышли из аккаунта!"}
     }
 }
 

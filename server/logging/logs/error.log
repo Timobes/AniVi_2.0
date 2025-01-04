@@ -308,3 +308,8 @@
 {"level":"error","timestamp":"2025-01-04T13:01:55.026Z"}
 {"level":"error","timestamp":"2025-01-04T13:02:28.046Z"}
 {"level":"error","timestamp":"2025-01-04T13:02:46.661Z"}
+{"code":"ERR_HTTP_INVALID_STATUS_CODE","level":"error","timestamp":"2025-01-04T13:32:14.941Z"}
+{"code":"ERR_HTTP_INVALID_STATUS_CODE","level":"error","timestamp":"2025-01-04T13:32:18.293Z"}
+{"code":"ERR_HTTP_INVALID_STATUS_CODE","level":"error","timestamp":"2025-01-04T13:32:24.915Z"}
+{"code":"ERR_HTTP_INVALID_STATUS_CODE","level":"error","timestamp":"2025-01-04T13:32:26.920Z"}
+{"code":"ERR_HTTP_INVALID_STATUS_CODE","level":"error","timestamp":"2025-01-04T13:32:45.051Z"}

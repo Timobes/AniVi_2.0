@@ -27,7 +27,7 @@ describe('/auth', function() {
         request(app)
             .post('/api/auth/login')
             .send({username: `${randomName}`, pass: `${randomPass}`, repeatPass: `${randomPass}`})
-            .expect(201)
+            .expect(200)
             .end((err, res) => {
                 if (err) return done(err)
 
@@ -39,7 +39,7 @@ describe('/auth', function() {
         agent
             .post('/api/auth/auth')
             .send({username: `${process.env.TEST_ADMIN_NAME}`, pass: `${process.env.TEST_ADMIN_PASS}`})
-            .expect(201)
+            .expect(200)
             .end((err, res) => {
                 if (err) return done(err)
 
@@ -50,7 +50,7 @@ describe('/auth', function() {
     it('is admin', (done) => {
         agent
             .post('/api/auth/admin')
-            .expect(201)
+            .expect(200)
             .end((err, res) => {
                 if (err) return done(err)
 
@@ -64,7 +64,7 @@ describe('/anime', () => {
     it('/get', (done) => {
         request(app)
             .get('/api/anime')
-            .expect(201)
+            .expect(200)
             .end((err, res) => {
                 if (err) return done(err)
                 done() 
@@ -74,7 +74,7 @@ describe('/anime', () => {
     it('/get one', (done) => {
         request(app)
             .get('/api/anime/1')
-            .expect(201)
+            .expect(200)
             .end((err, res) => {
                 if (err) return done(err)
                 done() 
