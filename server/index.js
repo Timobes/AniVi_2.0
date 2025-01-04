@@ -8,6 +8,8 @@ const helmet = require('helmet')
 
 const db = require('./db/db')
 
+db.sync()
+
 const dotenv = require('dotenv');
 const httpLogger = require('./logging/httpLoger');
 const logger = require('./logging/logger');
@@ -42,7 +44,6 @@ dotenv.config()
 
 const port = process.env.BACK_PORT || 8080
 
-db.sync()
 
 app.use(express.static('static'))
 app.use(express.json())

@@ -1078,3 +1078,138 @@
 {"level":"info","message":"Админ прошёл проверку","timestamp":"2024-12-19T11:46:35.031Z"}
 {"level":"info","message":"Админ прошёл проверку","timestamp":"2024-12-19T11:46:44.126Z"}
 {"level":"info","message":"Админ прошёл проверку","timestamp":"2024-12-19T11:46:50.185Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-03T15:50:37.998Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-03T20:22:51.562Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-03T20:23:24.746Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-03T20:25:28.891Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-03T20:25:54.244Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-03T20:27:47.957Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-03T20:28:06.197Z"}
+{"level":"error","timestamp":"2025-01-03T20:28:06.437Z"}
+{"code":"ERR_HTTP_INVALID_STATUS_CODE","level":"error","timestamp":"2025-01-03T20:28:08.827Z"}
+{"level":"error","timestamp":"2025-01-03T20:28:10.833Z"}
+{"code":"ERR_HTTP_INVALID_STATUS_CODE","level":"error","timestamp":"2025-01-03T20:28:56.628Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-03T20:29:32.894Z"}
+{"level":"error","timestamp":"2025-01-03T20:29:33.107Z"}
+{"code":"ERR_HTTP_INVALID_STATUS_CODE","level":"error","timestamp":"2025-01-03T20:29:35.458Z"}
+{"level":"error","timestamp":"2025-01-03T20:29:37.452Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-03T20:36:09.508Z"}
+{"level":"error","timestamp":"2025-01-03T20:36:09.769Z"}
+{"code":"ERR_HTTP_INVALID_STATUS_CODE","level":"error","timestamp":"2025-01-03T20:36:11.924Z"}
+{"level":"error","timestamp":"2025-01-03T20:36:13.922Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-03T20:37:28.717Z"}
+{"level":"error","timestamp":"2025-01-03T20:37:28.988Z"}
+{"code":"ERR_HTTP_INVALID_STATUS_CODE","level":"error","timestamp":"2025-01-03T20:37:31.143Z"}
+{"level":"error","timestamp":"2025-01-03T20:37:33.137Z"}
+{"level":"error","timestamp":"2025-01-03T20:37:38.632Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-03T20:49:26.431Z"}
+{"level":"error","timestamp":"2025-01-03T20:49:31.689Z"}
+{"code":"ERR_HTTP_INVALID_STATUS_CODE","level":"error","timestamp":"2025-01-03T20:50:26.075Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-03T20:50:36.345Z"}
+{"code":"ERR_HTTP_INVALID_STATUS_CODE","level":"error","timestamp":"2025-01-03T20:50:43.344Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-03T20:50:46.663Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-03T20:51:54.236Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-03T20:52:05.500Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-03T20:52:17.257Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-03T20:53:53.673Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-03T20:53:55.707Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-03T20:54:01.792Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-03T20:55:19.911Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-03T20:55:49.227Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-03T20:56:00.036Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-03T20:56:02.665Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-03T21:01:00.057Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-03T21:01:01.653Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-03T21:04:01.581Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-03T21:04:13.606Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-03T21:07:53.815Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-03T21:09:31.544Z"}
+{"level":"error","timestamp":"2025-01-03T21:09:31.720Z"}
+{"level":"info","message":"Админ прошёл проверку","timestamp":"2025-01-03T21:09:33.917Z"}
+{"level":"error","timestamp":"2025-01-03T21:10:41.014Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-03T21:10:56.085Z"}
+{"level":"error","timestamp":"2025-01-03T21:10:59.226Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-03T21:12:17.423Z"}
+{"level":"error","timestamp":"2025-01-03T21:12:20.116Z"}
+{"level":"info","message":"Админ прошёл проверку","timestamp":"2025-01-03T21:12:40.203Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-03T21:12:48.058Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-03T21:13:31.854Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-03T21:14:01.310Z"}
+{"level":"info","message":"Админ прошёл проверку","timestamp":"2025-01-03T21:14:01.705Z"}
+{"level":"error","timestamp":"2025-01-03T21:14:01.790Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-03T21:14:35.513Z"}
+{"level":"info","message":"Админ прошёл проверку","timestamp":"2025-01-03T21:14:35.947Z"}
+{"level":"info","message":"Админ прошёл проверку","timestamp":"2025-01-03T21:14:35.986Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-03T21:15:13.613Z"}
+{"level":"info","message":"Админ прошёл проверку","timestamp":"2025-01-03T21:15:13.874Z"}
+{"level":"info","message":"Админ прошёл проверку","timestamp":"2025-01-03T21:15:13.909Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T12:12:18.670Z"}
+{"level":"error","name":"SequelizeDatabaseError","original":{"code":"22P02","file":"numutils.c","length":150,"line":"619","name":"error","position":"148","routine":"pg_strtoint32_safe","severity":"ОШИБКА","sql":"SELECT \"user_id\", \"username\", \"pass\", \"ref_token\", \"bio\", \"logo\", \"role\", \"createdAt\", \"updatedAt\" FROM \"users\" AS \"user\" WHERE \"user\".\"user_id\" = 'testavatar';"},"parameters":{},"parent":{"code":"22P02","file":"numutils.c","length":150,"line":"619","name":"error","position":"148","routine":"pg_strtoint32_safe","severity":"ОШИБКА","sql":"SELECT \"user_id\", \"username\", \"pass\", \"ref_token\", \"bio\", \"logo\", \"role\", \"createdAt\", \"updatedAt\" FROM \"users\" AS \"user\" WHERE \"user\".\"user_id\" = 'testavatar';"},"sql":"SELECT \"user_id\", \"username\", \"pass\", \"ref_token\", \"bio\", \"logo\", \"role\", \"createdAt\", \"updatedAt\" FROM \"users\" AS \"user\" WHERE \"user\".\"user_id\" = 'testavatar';","timestamp":"2025-01-04T12:12:27.673Z"}
+{"level":"error","name":"SequelizeDatabaseError","original":{"code":"22P02","file":"numutils.c","length":150,"line":"619","name":"error","position":"148","routine":"pg_strtoint32_safe","severity":"ОШИБКА","sql":"SELECT \"user_id\", \"username\", \"pass\", \"ref_token\", \"bio\", \"logo\", \"role\", \"createdAt\", \"updatedAt\" FROM \"users\" AS \"user\" WHERE \"user\".\"user_id\" = 'testavatar';"},"parameters":{},"parent":{"code":"22P02","file":"numutils.c","length":150,"line":"619","name":"error","position":"148","routine":"pg_strtoint32_safe","severity":"ОШИБКА","sql":"SELECT \"user_id\", \"username\", \"pass\", \"ref_token\", \"bio\", \"logo\", \"role\", \"createdAt\", \"updatedAt\" FROM \"users\" AS \"user\" WHERE \"user\".\"user_id\" = 'testavatar';"},"sql":"SELECT \"user_id\", \"username\", \"pass\", \"ref_token\", \"bio\", \"logo\", \"role\", \"createdAt\", \"updatedAt\" FROM \"users\" AS \"user\" WHERE \"user\".\"user_id\" = 'testavatar';","timestamp":"2025-01-04T12:12:27.673Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T12:13:21.642Z"}
+{"level":"error","name":"SequelizeDatabaseError","original":{"code":"22P02","file":"numutils.c","length":150,"line":"619","name":"error","position":"148","routine":"pg_strtoint32_safe","severity":"ОШИБКА","sql":"SELECT \"user_id\", \"username\", \"pass\", \"ref_token\", \"bio\", \"logo\", \"role\", \"createdAt\", \"updatedAt\" FROM \"users\" AS \"user\" WHERE \"user\".\"user_id\" = 'testavatar';"},"parameters":{},"parent":{"code":"22P02","file":"numutils.c","length":150,"line":"619","name":"error","position":"148","routine":"pg_strtoint32_safe","severity":"ОШИБКА","sql":"SELECT \"user_id\", \"username\", \"pass\", \"ref_token\", \"bio\", \"logo\", \"role\", \"createdAt\", \"updatedAt\" FROM \"users\" AS \"user\" WHERE \"user\".\"user_id\" = 'testavatar';"},"sql":"SELECT \"user_id\", \"username\", \"pass\", \"ref_token\", \"bio\", \"logo\", \"role\", \"createdAt\", \"updatedAt\" FROM \"users\" AS \"user\" WHERE \"user\".\"user_id\" = 'testavatar';","timestamp":"2025-01-04T12:13:24.150Z"}
+{"level":"error","name":"SequelizeDatabaseError","original":{"code":"22P02","file":"numutils.c","length":150,"line":"619","name":"error","position":"148","routine":"pg_strtoint32_safe","severity":"ОШИБКА","sql":"SELECT \"user_id\", \"username\", \"pass\", \"ref_token\", \"bio\", \"logo\", \"role\", \"createdAt\", \"updatedAt\" FROM \"users\" AS \"user\" WHERE \"user\".\"user_id\" = 'testavatar';"},"parameters":{},"parent":{"code":"22P02","file":"numutils.c","length":150,"line":"619","name":"error","position":"148","routine":"pg_strtoint32_safe","severity":"ОШИБКА","sql":"SELECT \"user_id\", \"username\", \"pass\", \"ref_token\", \"bio\", \"logo\", \"role\", \"createdAt\", \"updatedAt\" FROM \"users\" AS \"user\" WHERE \"user\".\"user_id\" = 'testavatar';"},"sql":"SELECT \"user_id\", \"username\", \"pass\", \"ref_token\", \"bio\", \"logo\", \"role\", \"createdAt\", \"updatedAt\" FROM \"users\" AS \"user\" WHERE \"user\".\"user_id\" = 'testavatar';","timestamp":"2025-01-04T12:13:24.150Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T12:14:03.852Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T12:15:04.184Z"}
+{"level":"error","name":"SequelizeDatabaseError","original":{"code":"22P02","file":"numutils.c","length":150,"line":"619","name":"error","position":"148","routine":"pg_strtoint32_safe","severity":"ОШИБКА","sql":"SELECT \"user_id\", \"username\", \"pass\", \"ref_token\", \"bio\", \"logo\", \"role\", \"createdAt\", \"updatedAt\" FROM \"users\" AS \"user\" WHERE \"user\".\"user_id\" = 'testavatar';"},"parameters":{},"parent":{"code":"22P02","file":"numutils.c","length":150,"line":"619","name":"error","position":"148","routine":"pg_strtoint32_safe","severity":"ОШИБКА","sql":"SELECT \"user_id\", \"username\", \"pass\", \"ref_token\", \"bio\", \"logo\", \"role\", \"createdAt\", \"updatedAt\" FROM \"users\" AS \"user\" WHERE \"user\".\"user_id\" = 'testavatar';"},"sql":"SELECT \"user_id\", \"username\", \"pass\", \"ref_token\", \"bio\", \"logo\", \"role\", \"createdAt\", \"updatedAt\" FROM \"users\" AS \"user\" WHERE \"user\".\"user_id\" = 'testavatar';","timestamp":"2025-01-04T12:15:08.818Z"}
+{"level":"error","name":"SequelizeDatabaseError","original":{"code":"22P02","file":"numutils.c","length":150,"line":"619","name":"error","position":"148","routine":"pg_strtoint32_safe","severity":"ОШИБКА","sql":"SELECT \"user_id\", \"username\", \"pass\", \"ref_token\", \"bio\", \"logo\", \"role\", \"createdAt\", \"updatedAt\" FROM \"users\" AS \"user\" WHERE \"user\".\"user_id\" = 'testavatar';"},"parameters":{},"parent":{"code":"22P02","file":"numutils.c","length":150,"line":"619","name":"error","position":"148","routine":"pg_strtoint32_safe","severity":"ОШИБКА","sql":"SELECT \"user_id\", \"username\", \"pass\", \"ref_token\", \"bio\", \"logo\", \"role\", \"createdAt\", \"updatedAt\" FROM \"users\" AS \"user\" WHERE \"user\".\"user_id\" = 'testavatar';"},"sql":"SELECT \"user_id\", \"username\", \"pass\", \"ref_token\", \"bio\", \"logo\", \"role\", \"createdAt\", \"updatedAt\" FROM \"users\" AS \"user\" WHERE \"user\".\"user_id\" = 'testavatar';","timestamp":"2025-01-04T12:15:08.818Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T12:15:33.869Z"}
+{"level":"error","name":"SequelizeDatabaseError","original":{"code":"22P02","file":"numutils.c","length":150,"line":"619","name":"error","position":"148","routine":"pg_strtoint32_safe","severity":"ОШИБКА","sql":"SELECT \"user_id\", \"username\", \"pass\", \"ref_token\", \"bio\", \"logo\", \"role\", \"createdAt\", \"updatedAt\" FROM \"users\" AS \"user\" WHERE \"user\".\"user_id\" = 'testavatar';"},"parameters":{},"parent":{"code":"22P02","file":"numutils.c","length":150,"line":"619","name":"error","position":"148","routine":"pg_strtoint32_safe","severity":"ОШИБКА","sql":"SELECT \"user_id\", \"username\", \"pass\", \"ref_token\", \"bio\", \"logo\", \"role\", \"createdAt\", \"updatedAt\" FROM \"users\" AS \"user\" WHERE \"user\".\"user_id\" = 'testavatar';"},"sql":"SELECT \"user_id\", \"username\", \"pass\", \"ref_token\", \"bio\", \"logo\", \"role\", \"createdAt\", \"updatedAt\" FROM \"users\" AS \"user\" WHERE \"user\".\"user_id\" = 'testavatar';","timestamp":"2025-01-04T12:15:37.564Z"}
+{"level":"error","name":"SequelizeDatabaseError","original":{"code":"22P02","file":"numutils.c","length":150,"line":"619","name":"error","position":"148","routine":"pg_strtoint32_safe","severity":"ОШИБКА","sql":"SELECT \"user_id\", \"username\", \"pass\", \"ref_token\", \"bio\", \"logo\", \"role\", \"createdAt\", \"updatedAt\" FROM \"users\" AS \"user\" WHERE \"user\".\"user_id\" = 'testavatar';"},"parameters":{},"parent":{"code":"22P02","file":"numutils.c","length":150,"line":"619","name":"error","position":"148","routine":"pg_strtoint32_safe","severity":"ОШИБКА","sql":"SELECT \"user_id\", \"username\", \"pass\", \"ref_token\", \"bio\", \"logo\", \"role\", \"createdAt\", \"updatedAt\" FROM \"users\" AS \"user\" WHERE \"user\".\"user_id\" = 'testavatar';"},"sql":"SELECT \"user_id\", \"username\", \"pass\", \"ref_token\", \"bio\", \"logo\", \"role\", \"createdAt\", \"updatedAt\" FROM \"users\" AS \"user\" WHERE \"user\".\"user_id\" = 'testavatar';","timestamp":"2025-01-04T12:15:37.564Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T12:15:56.664Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T12:16:15.494Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T12:16:36.880Z"}
+{"level":"info","message":"Админ прошёл проверку","timestamp":"2025-01-04T12:17:15.730Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T12:18:27.921Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T12:18:42.909Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T12:18:51.900Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T12:18:59.928Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T12:20:57.926Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T12:21:15.538Z"}
+{"level":"error","name":"SequelizeDatabaseError","original":{"code":"22P02","file":"numutils.c","length":150,"line":"619","name":"error","position":"148","routine":"pg_strtoint32_safe","severity":"ОШИБКА","sql":"SELECT \"user_id\", \"username\", \"pass\", \"ref_token\", \"bio\", \"logo\", \"role\", \"createdAt\", \"updatedAt\" FROM \"users\" AS \"user\" WHERE \"user\".\"user_id\" = 'testavatar';"},"parameters":{},"parent":{"code":"22P02","file":"numutils.c","length":150,"line":"619","name":"error","position":"148","routine":"pg_strtoint32_safe","severity":"ОШИБКА","sql":"SELECT \"user_id\", \"username\", \"pass\", \"ref_token\", \"bio\", \"logo\", \"role\", \"createdAt\", \"updatedAt\" FROM \"users\" AS \"user\" WHERE \"user\".\"user_id\" = 'testavatar';"},"sql":"SELECT \"user_id\", \"username\", \"pass\", \"ref_token\", \"bio\", \"logo\", \"role\", \"createdAt\", \"updatedAt\" FROM \"users\" AS \"user\" WHERE \"user\".\"user_id\" = 'testavatar';","timestamp":"2025-01-04T12:21:26.560Z"}
+{"level":"error","name":"SequelizeDatabaseError","original":{"code":"22P02","file":"numutils.c","length":150,"line":"619","name":"error","position":"148","routine":"pg_strtoint32_safe","severity":"ОШИБКА","sql":"SELECT \"user_id\", \"username\", \"pass\", \"ref_token\", \"bio\", \"logo\", \"role\", \"createdAt\", \"updatedAt\" FROM \"users\" AS \"user\" WHERE \"user\".\"user_id\" = 'testavatar';"},"parameters":{},"parent":{"code":"22P02","file":"numutils.c","length":150,"line":"619","name":"error","position":"148","routine":"pg_strtoint32_safe","severity":"ОШИБКА","sql":"SELECT \"user_id\", \"username\", \"pass\", \"ref_token\", \"bio\", \"logo\", \"role\", \"createdAt\", \"updatedAt\" FROM \"users\" AS \"user\" WHERE \"user\".\"user_id\" = 'testavatar';"},"sql":"SELECT \"user_id\", \"username\", \"pass\", \"ref_token\", \"bio\", \"logo\", \"role\", \"createdAt\", \"updatedAt\" FROM \"users\" AS \"user\" WHERE \"user\".\"user_id\" = 'testavatar';","timestamp":"2025-01-04T12:21:26.560Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T12:22:15.254Z"}
+{"level":"error","timestamp":"2025-01-04T12:22:21.475Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T12:23:09.330Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T12:23:19.140Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T12:23:24.277Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T12:23:47.010Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T12:24:51.832Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T12:46:02.215Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T12:46:11.132Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T12:46:29.020Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T12:46:39.555Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T12:47:03.921Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T12:47:19.091Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T12:47:57.373Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T12:48:06.522Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T12:48:08.636Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T12:49:19.733Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T12:49:21.259Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T12:49:37.852Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T12:49:50.822Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T12:50:12.446Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T12:50:50.702Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T12:52:02.434Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T12:52:08.043Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T13:00:28.452Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T13:00:33.771Z"}
+{"level":"error","timestamp":"2025-01-04T13:01:07.713Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T13:01:26.337Z"}
+{"level":"error","timestamp":"2025-01-04T13:01:28.723Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T13:01:51.937Z"}
+{"level":"error","timestamp":"2025-01-04T13:01:55.026Z"}
+{"level":"error","timestamp":"2025-01-04T13:02:28.046Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T13:02:42.579Z"}
+{"level":"error","timestamp":"2025-01-04T13:02:46.661Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T13:02:58.434Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T13:03:11.750Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T13:04:34.101Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T13:04:35.957Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T13:06:07.238Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T13:08:58.670Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T13:09:10.259Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T13:10:02.019Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T13:10:06.444Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T13:10:21.962Z"}
+{"level":"info","message":"Backend is run 8080 port","timestamp":"2025-01-04T13:10:27.465Z"}

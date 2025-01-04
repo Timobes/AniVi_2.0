@@ -44,66 +44,52 @@ class UserService {
         }
     }
 
-    async CreateAvatar () {
-        try {
-
-            return {message: "вы добавили аватар!"}
-        } catch (error) {
-            logger.error(error)
-        }
-    }
-
-    async GetAvatar (req) {
-        try {
-            // let headerToken = req.cookies.accessToken
-            // let readHeaderToken = readToken(headerToken)
-            // let userName = readHeaderToken.jwtPass.username
-            
-            // let pathFile = path.join(__dirname, `../static/users/${userName}/avatar.jpeg`)
-
-            const id = req.params.id
-
-            const user = await User.findOne({
-                attributes: ['username'],
-                
-                where: {
-                    user_id: id
-                }
-            })
-
-            const userName = user.dataValues.username
-
-            let file = `http://localhost:8080/users/${userName}/avatar.jpeg`
-
-            // fs.access(pathFile, fs.constants.F_OK, (err) => {
-            //     if (err) {
-            //         console.log('lox')
-            //         return {message: ""}
-            //     } else {
-            //         return {"message": `${file}`}
-            //     }
-            // });
-            
-
-            return {message: `${file}`}
-        } catch (error) {
-            logger.error(error)
-        }
-    }
-
-    async GetMyAvatar (req) {
+    async CreateAvatar (req) {
         try {
             let headerToken = req.cookies.accessToken
             let readHeaderToken = readToken(headerToken)
             let userName = readHeaderToken.jwtPass.username
 
-            let file = `http://localhost:8080/users/${userName}/avatar.jpeg`
+            const folder = `http://localhost:8080/users/${userName}/avatar.jpeg`
 
-            return {message: `${file}`}
+            const avatar = await User.update(
+                { logo: folder},
+                {
+                    where: {
+                        username: userName 
+                    }
+                }
+            )
+           
+            return {message: "вы добавили аватар!"}
+        } catch (error) {
+            logger.error(error)
+            console.log(error)
+        }
+    }
+
+    async GetAvatar (username) {
+        try {
+            try {
+                const isLogo = await User.findOne({
+                    attributes: ["logo"],
+                    
+                    where: {
+                        username: username
+                    }
+                })
+
+                let logo = isLogo.dataValues.logo
+
+                return {message: logo} 
+            } catch (error) {
+                return {message: "Нет такого пользователя"}
+            }
+               
         } catch (error) {
             logger.error(error)
         }
-    }
+    } 
 }
 
 module.exports = new UserService
