@@ -313,3 +313,9 @@
 {"code":"ERR_HTTP_INVALID_STATUS_CODE","level":"error","timestamp":"2025-01-04T13:32:24.915Z"}
 {"code":"ERR_HTTP_INVALID_STATUS_CODE","level":"error","timestamp":"2025-01-04T13:32:26.920Z"}
 {"code":"ERR_HTTP_INVALID_STATUS_CODE","level":"error","timestamp":"2025-01-04T13:32:45.051Z"}
+{"level":"error","name":"SequelizeHostNotFoundError","original":{"code":"ENOTFOUND","errno":-3008,"hostname":"db","syscall":"getaddrinfo"},"parent":{"code":"ENOTFOUND","errno":-3008,"hostname":"db","syscall":"getaddrinfo"},"timestamp":"2025-01-18T16:31:20.131Z"}
+{"level":"error","name":"SequelizeHostNotFoundError","original":{"code":"ENOTFOUND","errno":-3008,"hostname":"db","syscall":"getaddrinfo"},"parent":{"code":"ENOTFOUND","errno":-3008,"hostname":"db","syscall":"getaddrinfo"},"timestamp":"2025-01-18T16:31:20.131Z"}
+{"level":"error","timestamp":"2025-01-18T16:31:21.890Z"}
+{"level":"error","name":"SequelizeHostNotFoundError","original":{"code":"ENOTFOUND","errno":-3008,"hostname":"db","syscall":"getaddrinfo"},"parent":{"code":"ENOTFOUND","errno":-3008,"hostname":"db","syscall":"getaddrinfo"},"timestamp":"2025-01-18T16:31:26.178Z"}
+{"level":"error","name":"SequelizeHostNotFoundError","original":{"code":"ENOTFOUND","errno":-3008,"hostname":"db","syscall":"getaddrinfo"},"parent":{"code":"ENOTFOUND","errno":-3008,"hostname":"db","syscall":"getaddrinfo"},"timestamp":"2025-01-18T16:31:26.178Z"}
+{"level":"error","timestamp":"2025-01-18T16:31:26.187Z"}

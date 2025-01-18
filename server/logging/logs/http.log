@@ -26357,3 +26357,5 @@ POST /api/auth/admin 200 11.375 ms 04/Jan/2025:15:01:03 +0000 | - | accessToken=
 GET /api/anime 200 7.558 ms 04/Jan/2025:15:01:03 +0000 | - | -
 GET /api/anime/1 200 2.255 ms 04/Jan/2025:15:01:03 +0000 | - | -
 POST /api/anime/ 200 21.449 ms 04/Jan/2025:15:01:03 +0000 | - | accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzM2MDAyODYzLCJleHAiOjE3MzYwMDQ2NjN9.g_CEoYP4t6_PLg947RDDM6eIxCEDHPdC22Bm_wHTLjA
+GET /api/anime 200 2277.538 ms 18/Jan/2025:16:31:26 +0000 | - | -
+GET /api/anime/1 200 265.097 ms 18/Jan/2025:16:31:26 +0000 | - | -
