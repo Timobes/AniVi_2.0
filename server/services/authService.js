@@ -1,40 +1,39 @@
 const User = require('../db/models/userModel.js')
 const { createAvatarFolder } = require('../utility/createAvatarFolder.js')
-const { createJWTPassword } = require('../utility/createJWTPassword.js')
+const { createPassword } = require('../utility/createPassword.js')
 const {createToken} = require('../utility/createToken.js')
-const { readJWTPassword } = require('../utility/readJWTPassword.js')
+const { readPassword } = require('../utility/readPassword.js')
 const { readToken } = require('../utility/readToken.js')
 
 class AuthService {
     async login(body) {
         const {username, pass, repeatPass} = body
 
-        if (pass != repeatPass) {
+            // const isUser = await User.findOne({where:{ username: username}}) 
+            // console.log(isUser.dataValues.username)
             
-            return {status: 400, message: "Пароли не совпадают!"}
+            // if (isUser.dataValues.username) {
+            //     return {status: 401, message: "Такой пользователь уже есть!"}
+            // } else {
 
-        } else if (username.length < 5 || pass.length < 5) {
-            
-            return {status: 400, message: "Маленькая длина логина или пароля!"} 
-            
-        } else {
-            const jwtpass = createJWTPassword(pass)
-            
-            const accessToken = createToken(username, '30m')
-            const refreshToken = createToken(username, '30d')
+                const jwtpass = await createPassword(pass)
+                
+                const accessToken = createToken(username, '30m')
+                const refreshToken = createToken(username, '30d')
 
-            const createUser = await User.create({
-                username: username,
-                pass: jwtpass,
-                ref_token: refreshToken
-            })
+                const createUser = await User.create({
+                    username: username,
+                    pass: jwtpass,
+                    ref_token: refreshToken
+                })
 
-            createAvatarFolder(username)
+                createAvatarFolder(username)
 
-            const rows = createUser
+                const rows = createUser
 
-            return {status: 201, message: "Пользователь создан!", accessToken: `${accessToken}`, rows}
-        }
+                return {message: "Пользователь создан!"}
+            // }
+        
     }
 
     async auth(body, res) {
@@ -42,9 +41,10 @@ class AuthService {
 
         const nickname = await User.findOne({where: {username: username}})
         const isPass = nickname.dataValues.pass
-        const readPass = readJWTPassword(isPass)
 
-        if(pass == readPass.pass) {
+        const testPass = await readPassword(pass, isPass) 
+        
+        if(testPass) {
             const accessToken = createToken(username, '30m')
             const refreshToken = createToken(username, '30d')
             
@@ -54,17 +54,19 @@ class AuthService {
                 httpOnly: true
             })
             
-            return {"message": `Добро пожаловать ${username}!`}
+            return {message: `Добро пожаловать ${username}!`}
+
         
         } else {
 
-            return {"message": "Неправильный пароль!"}
+            return {message: "Неправильный пароль!"}
 
         }
     }
 
     async admin(req) {
-        return {"message": "Добро пожаловать Админ!"}
+        return {message: "Добро пожаловать Админ!"}
+        
     }
 
     async profile(req, res) {
@@ -75,12 +77,12 @@ class AuthService {
         
         const rows = userProfile.dataValues
 
-        return rows
+        return {rows}
     }
 
     async exit(res) {
         res.clearCookie('accessToken')
-        return {"mesage": "Вы вышли из аккаунта!"}
+        return {message: "Вы вышли из аккаунта!"}
     }
 }
 

@@ -34,7 +34,7 @@ class UserController {
 
     async CreateAvatar (req, res) {
         try {
-            const avatar = await userService.CreateAvatar()
+            const avatar = await userService.CreateAvatar(req)
 
             res.json(avatar)
         } catch (error) {
@@ -42,6 +42,15 @@ class UserController {
         }
     }
 
+    async GetAvatar (req, res) {
+        try {
+            const avatar = await userService.GetAvatar(req.params.username)
+
+            res.json(avatar)
+        } catch (error) {
+            logger.error(error)
+        }
+    }
 }
 
 module.exports = new UserController

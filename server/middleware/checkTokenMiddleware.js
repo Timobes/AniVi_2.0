@@ -2,6 +2,7 @@ const {readToken} = require('../utility/readToken')
 
 const dotenv = require('dotenv')
 const User = require('../db/models/userModel')
+const logger = require('../logging/logger')
 dotenv.config()
 
 async function checkTokenMiddleware(req, res, next) {

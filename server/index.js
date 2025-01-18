@@ -4,17 +4,46 @@ const router = require('./routers/mainRouter')
 
 const cors = require('cors')
 const cookieParser = require('cookie-parser');
+const helmet = require('helmet')
+
 const db = require('./db/db')
+
+db.sync()
 
 const dotenv = require('dotenv');
 const httpLogger = require('./logging/httpLoger');
 const logger = require('./logging/logger');
 
+const swaggerUi = require('swagger-ui-express')
+const swaggerJsDoc = require('swagger-jsdoc')
+
+const swaggerOptions = {
+  swaggerDefinition: {
+    openai: '3.0.0',
+    info: {
+      title: 'AniVi Api',
+      version: '1.0.0',
+      description: 'Описание'
+    },
+
+    servers: [
+      {
+        url: "http://localhost:8080"
+      }
+    ]
+  },
+
+  apis: ['./routers/*.js']
+}
+
+const swaggerDocs = swaggerJsDoc(swaggerOptions)
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs))
+
 dotenv.config()
 
 const port = process.env.BACK_PORT || 8080
 
-db.sync()
 
 app.use(express.static('static'))
 app.use(express.json())
@@ -33,6 +62,8 @@ app.use(cors({
       "Access-Control-Allow-Credentials",
     ],
 }))
+
+app.use(helmet())
 
 app.use('/api', router)
 

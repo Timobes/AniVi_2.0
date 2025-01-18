@@ -18,41 +18,16 @@ function generateRandomString(length) {
     return result;
 }
 
-
-
-
-
-describe('/anime', () => {
-    it('/get', (done) => {
-        request(app)
-            .get('/api/anime')
-            .expect(200)
-            .end((err, res) => {
-                if (err) return done(err)
-                done() 
-            })
-    });
-
-    it('/get one', (done) => {
-        request(app)
-            .get('/api/anime/1')
-            .expect(200)
-            .end((err, res) => {
-                if (err) return done(err)
-                done() 
-            })
-    })
-});
-
+// Test auth endpoint
 describe('/auth', function() {
-    const randomName = generateRandomString(7)
-    const randomPass = generateRandomString(7)
+    const randomName = generateRandomString(8)
+    const randomPass = generateRandomString(8)
 
     it('login', (done) => {
         request(app)
             .post('/api/auth/login')
             .send({username: `${randomName}`, pass: `${randomPass}`, repeatPass: `${randomPass}`})
-            .expect(201)
+            .expect(200)
             .end((err, res) => {
                 if (err) return done(err)
 
@@ -83,4 +58,49 @@ describe('/auth', function() {
             })
     })
 })
+
+// Test anime endpoint
+describe('/anime', () => {
+    it('/get', (done) => {
+        request(app)
+            .get('/api/anime')
+            .expect(200)
+            .end((err, res) => {
+                if (err) return done(err)
+                done() 
+            })
+    });
+
+    it('/get one', (done) => {
+        request(app)
+            .get('/api/anime/1')
+            .expect(200)
+            .end((err, res) => {
+                if (err) return done(err)
+                done() 
+            })
+    })
+
+    it('/create anime', (done) => {
+        agent
+            .post('/api/anime/')
+            .send({
+                "anime_title_rus": "text 1", 
+                "anime_title_eng": "text 1", 
+                "anime_title_jap": "text 1", 
+                "description": "desc 1", 
+                "year": "09-09-2005", 
+                "poster_url": "https://dere.shikimori.one/uploads/poster/animes/57334/main-fa84f9d076cad6ac3c74bb6972578bbe.webp", 
+                "user_id": 1
+            })
+            .expect(200)
+            .end((err, res) => {
+                if (err) return done(err)
+
+                done()
+            })
+    })
+});
+
+
 

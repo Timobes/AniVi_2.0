@@ -7,7 +7,7 @@ const Anime = db.define('anime', {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,    
-    },
+    },  
 
     anime_title_rus: {
         type: DataTypes.STRING,

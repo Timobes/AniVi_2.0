@@ -6,7 +6,7 @@ class AnimeService {
     async getAllAnime() {
         try {
             const anime = await Anime.findAll()
-            
+
             return anime
         } catch (error) {
             logger.error(error)
