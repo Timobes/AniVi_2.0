@@ -1,5 +1,5 @@
 const Anime = require("../db/models/animeModel")
-const Bookmarks = require("../db/models/bookMarksModel")
+const Bookmarks = require("../db/models/bookmarksModel")
 const User = require("../db/models/userModel")
 const logger = require("../logging/logger")
 
