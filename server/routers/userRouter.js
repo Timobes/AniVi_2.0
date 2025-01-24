@@ -76,4 +76,6 @@ userRouter.delete('/:id', checkTokenMiddleware, checkRefreshTokenMiddleware, che
  */
 userRouter.post('/avatar', checkTokenMiddleware, checkRefreshTokenMiddleware, upload.single('avatar'), userController.CreateAvatar)
 
+userRouter.patch('/update', checkTokenMiddleware, checkRefreshTokenMiddleware, userController.Update)
+
 module.exports = userRouter

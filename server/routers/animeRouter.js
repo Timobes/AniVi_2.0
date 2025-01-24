@@ -98,4 +98,6 @@ animeRouter.post('/poster', checkTokenMiddleware, checkRefreshTokenMiddleware, c
  */
 animeRouter.post('/moments', checkTokenMiddleware, checkRefreshTokenMiddleware, checkAdminMiddleware, upload.fields([{name: 'anime_moments', maxCount: 10}]), animeController.sendMoments)
 
+animeRouter.patch('/update/:id', checkTokenMiddleware, checkRefreshTokenMiddleware, checkAdminMiddleware, animeController.Update)
+
 module.exports = animeRouter
