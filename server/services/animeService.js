@@ -81,6 +81,32 @@ class AnimeService {
             logger.error(error)
         }
     }
+
+    async Update(req) {
+        try {
+            const id = req.params.id
+            const updates = req.body
+            
+            for (let obj in updates) {
+                if (updates[obj] === '') {
+                    delete updates[obj];
+                }
+            }
+
+            const data = await Anime.update(
+                updates,
+                {
+                    where: {
+                        anime_id: id
+                    }
+                }
+            )
+
+            return data
+        } catch (error) {
+            logger.error(error)
+        }
+    }
 }
 
 module.exports = new AnimeService

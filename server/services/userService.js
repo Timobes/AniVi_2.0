@@ -1,8 +1,6 @@
 const User = require("../db/models/userModel")
 const logger = require("../logging/logger")
 const { readToken } = require("../utility/readToken")
-// const fs = require('fs')
-// const path = require('path')
 
 class UserService {
     async GetUsers () {
@@ -89,7 +87,36 @@ class UserService {
         } catch (error) {
             logger.error(error)
         }
-    } 
+    }
+    
+    async Update (req) {
+        try {
+            let headerToken = req.cookies.accessToken
+            let readHeaderToken = readToken(headerToken)
+            let userName = readHeaderToken.jwtPass.username
+
+            const updates = req.body
+
+            for (let obj in updates) {
+                if (updates[obj] === '') {
+                    delete updates[obj];
+                }
+            }
+
+            const data = await User.update(
+                updates,
+                {
+                    where: {
+                        username: userName
+                    },
+                }
+            )
+
+            return data
+        } catch (error) {
+            logger.error(error)
+        }
+    }
 }
 
 module.exports = new UserService

@@ -61,6 +61,16 @@ class AnimeController {
             logger.error(error)
         }        
     }
+
+    async Update(req, res) {
+        try {
+            const data = await animeService.Update(req)
+            
+            res.json(data)
+        } catch (error) {
+            logger.error(error)
+        }
+    }
 }
 
 module.exports = new AnimeController

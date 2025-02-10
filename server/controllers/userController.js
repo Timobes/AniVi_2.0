@@ -51,6 +51,17 @@ class UserController {
             logger.error(error)
         }
     }
+
+    async Update (req, res) {
+        try {
+            const data = await userService.Update(req)
+
+            res.json(data)
+        } catch (error) {
+            logger.error(error)
+        }
+    }
+    
 }
 
 module.exports = new UserController
