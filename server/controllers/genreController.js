@@ -41,6 +41,16 @@ class GenreController {
             logger.error(error)
         }
     }
+
+    async Update (req, res) {
+        try {
+            const genre = await genreService.Update(req)
+
+            res.json(genre)
+        } catch (error) {
+           logger.error(error) 
+        } 
+    }
 }
 
 module.exports = new GenreController

@@ -53,6 +53,32 @@ class GenreService {
             logger.error(error)
         }
     }
+
+    async Update (req) {
+        try {
+            const id = req.params.id
+            const updates = req.body
+
+            for (let obj in updates) {
+                if (updates[obj] === '') {
+                    delete updates[obj];
+                }
+            }
+
+            const genre = await Genre.update(
+                updates,
+                {
+                    where: {
+                        genre_id: id
+                    }
+                }
+            )
+
+            return genre
+        } catch (error) {
+            logger.error(error)
+        }
+    }
 }
 
 module.exports = new GenreService

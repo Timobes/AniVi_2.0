@@ -51,6 +51,32 @@ class AnimeEpService {
             logger.error(error)
         }
     }
+
+    async Update(req) {
+        try {
+            const id = req.params.id
+            const updates = req.body
+            
+            for (let obj in updates) {
+                if (updates[obj] === '') {
+                    delete updates[obj];
+                }
+            }
+
+            const data = await AnimeEp.update(
+                updates,
+                {
+                    where: {
+                        anime_ep_id: id
+                    }
+                }
+            )
+
+            return data
+        } catch (error) {
+            logger.error
+        }
+    }
 }
 
 module.exports = new AnimeEpService

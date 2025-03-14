@@ -1,5 +1,8 @@
 const Router = require('express')
 const genreController = require('../controllers/genreController')
+const { checkTokenMiddleware } = require('../middleware/checkTokenMiddleware')
+const { checkRefreshTokenMiddleware } = require('../middleware/checkRefreshTokenMiddleware')
+const { checkAdminMiddleware } = require('../middleware/checkAdminMiddleware')
 
 const genreRouter = new Router()
 
@@ -66,5 +69,8 @@ genreRouter.post('/', genreController.CreateGenre)
  *         description: Успешное удаление
  */
 genreRouter.delete('/:id', genreController.DeleteGenre)
+
+genreRouter.patch('/update/:id', checkTokenMiddleware, checkRefreshTokenMiddleware, checkAdminMiddleware, genreController)
+
 
 module.exports = genreRouter

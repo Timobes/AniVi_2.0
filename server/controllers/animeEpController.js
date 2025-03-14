@@ -21,6 +21,16 @@ class AnimeEpController {
             logger.error(error)
         }
     }
+
+    async Update(req, res) {
+        try {
+            const ep = await animeEpService.Update(req)
+
+            res.json(ep)
+        } catch (error) {
+            logger.error(error)
+        }
+    }
 }
 
 module.exports = new AnimeEpController

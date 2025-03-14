@@ -33,4 +33,6 @@ animeEpRouter.get('/', animeEpController.getEp)
  */
 animeEpRouter.post('/', upload.single('anime'), animeEpController.createEp)
 
+animeEpRouter.update('/update/:id', animeEpController.update)
+
 module.exports = animeEpRouter
