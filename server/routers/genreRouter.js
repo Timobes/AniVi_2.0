@@ -70,7 +70,7 @@ genreRouter.post('/', genreController.CreateGenre)
  */
 genreRouter.delete('/:id', genreController.DeleteGenre)
 
-genreRouter.patch('/update/:id', checkTokenMiddleware, checkRefreshTokenMiddleware, checkAdminMiddleware, genreController)
+genreRouter.patch('/update/:id', checkTokenMiddleware, checkRefreshTokenMiddleware, checkAdminMiddleware, genreController.Update)
 
 
 module.exports = genreRouter

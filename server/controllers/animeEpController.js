@@ -26,7 +26,7 @@ class AnimeEpController {
         try {
             const ep = await animeEpService.Update(req)
 
-            res.json(ep)
+            res.json({ "message": ep })
         } catch (error) {
             logger.error(error)
         }

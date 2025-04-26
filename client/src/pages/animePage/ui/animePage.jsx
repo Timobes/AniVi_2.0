@@ -24,7 +24,9 @@ export const AnimePage = () => {
         return <h1>Загрузка...</h1>
     }
 
-    const anime = data[0].anime
+    // const anime = data[0].anime
+    const anime = data[0]
+
 
     return (  
         <>

@@ -26435,3 +26435,59 @@ PATCH /api/anime/update/1 200 62.429 ms 19/Jan/2025:16:04:03 +0000 | PostmanRunt
 PATCH /api/anime/update/1 200 78.167 ms 19/Jan/2025:16:04:18 +0000 | PostmanRuntime/7.43.0 | accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzM3MzAyMTk0LCJleHAiOjE3MzczMDM5OTR9.XoqLlNDTXKUe9yExJCBCrOH8zHrQvDPttK75VN92YFE
 PATCH /api/anime/update/1 200 287.102 ms 19/Jan/2025:16:04:32 +0000 | PostmanRuntime/7.43.0 | accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzM3MzAyMTk0LCJleHAiOjE3MzczMDM5OTR9.XoqLlNDTXKUe9yExJCBCrOH8zHrQvDPttK75VN92YFE
 PATCH /api/anime/update/3 200 63.699 ms 19/Jan/2025:16:04:53 +0000 | PostmanRuntime/7.43.0 | accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzM3MzAyMTk0LCJleHAiOjE3MzczMDM5OTR9.XoqLlNDTXKUe9yExJCBCrOH8zHrQvDPttK75VN92YFE
+GET /api/user/my/avatar/ 404 8.618 ms 05/Apr/2025:10:42:47 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | PHPSESSID=91c81a2663f1ba79348988a0fff33fe5
+GET /api/anime/ 200 14.794 ms 05/Apr/2025:10:42:47 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | -
+GET /api/user/my/avatar/ 404 7.231 ms 05/Apr/2025:10:42:56 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | PHPSESSID=91c81a2663f1ba79348988a0fff33fe5
+GET /api/anime/ 304 13.367 ms 05/Apr/2025:10:42:56 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | -
+GET /api/user/my/avatar/ 404 7.462 ms 05/Apr/2025:10:44:45 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | PHPSESSID=91c81a2663f1ba79348988a0fff33fe5
+GET /api/anime/ 200 23.222 ms 05/Apr/2025:10:44:45 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | -
+GET /api/user/my/avatar/ 404 1.593 ms 05/Apr/2025:10:45:35 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | PHPSESSID=91c81a2663f1ba79348988a0fff33fe5
+GET /api/anime/ 304 208.027 ms 05/Apr/2025:10:45:36 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | -
+GET /api/user/my/avatar/ 404 1.652 ms 05/Apr/2025:10:45:40 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | PHPSESSID=91c81a2663f1ba79348988a0fff33fe5
+GET /api/anime/ 304 2.971 ms 05/Apr/2025:10:45:40 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | -
+GET /api/user/my/avatar/ 404 0.934 ms 05/Apr/2025:10:45:49 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | PHPSESSID=91c81a2663f1ba79348988a0fff33fe5
+GET /api/anime/ 304 3.958 ms 05/Apr/2025:10:45:49 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | -
+GET /api/user/my/avatar/ 404 1.596 ms 05/Apr/2025:10:45:59 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | PHPSESSID=91c81a2663f1ba79348988a0fff33fe5
+GET /api/anime/ 304 183.153 ms 05/Apr/2025:10:46:00 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | -
+GET /api/anime/ 304 4.056 ms 05/Apr/2025:10:46:05 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | -
+GET /api/anime/1 200 79.694 ms 05/Apr/2025:10:46:22 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | -
+GET /api/user/my/avatar/ 404 1.277 ms 05/Apr/2025:10:46:56 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | PHPSESSID=91c81a2663f1ba79348988a0fff33fe5
+GET /api/anime/1 304 61.476 ms 05/Apr/2025:10:46:56 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | -
+GET /api/anime/ 304 6.655 ms 05/Apr/2025:10:47:00 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | -
+GET /api/anime/1 304 4.810 ms 05/Apr/2025:10:47:01 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | -
+GET /api/anime/ 304 3.719 ms 05/Apr/2025:10:47:02 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | -
+GET /api/anime/6 200 2.765 ms 05/Apr/2025:10:47:04 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | -
+GET /api/anime/ 304 3.072 ms 05/Apr/2025:10:47:06 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | -
+GET /api/anime/11 200 5.706 ms 05/Apr/2025:10:47:07 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | -
+GET /api/anime/ 304 3.668 ms 05/Apr/2025:10:47:08 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | -
+GET /api/anime/9 200 3.016 ms 05/Apr/2025:10:47:09 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | -
+GET /api/anime/ 304 3.312 ms 05/Apr/2025:10:47:10 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | -
+GET /api/anime/2 200 4.180 ms 05/Apr/2025:10:47:11 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | -
+GET /api/anime/ 304 3.729 ms 05/Apr/2025:10:47:12 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | -
+GET /api/anime/5 200 4.138 ms 05/Apr/2025:10:47:12 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | -
+GET /api/anime/ 304 3.511 ms 05/Apr/2025:10:47:14 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | -
+GET /api/anime/5 304 3.914 ms 05/Apr/2025:10:47:15 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | -
+GET /api/anime/ 304 3.581 ms 05/Apr/2025:10:47:16 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | -
+GET /api/anime/ 304 4.705 ms 05/Apr/2025:10:47:25 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | -
+GET /api/anime/ 304 3.222 ms 05/Apr/2025:10:47:30 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | -
+OPTIONS /api/auth/auth 204 1.795 ms 05/Apr/2025:10:47:49 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | -
+POST /api/auth/auth 200 400.880 ms 05/Apr/2025:10:47:50 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | PHPSESSID=91c81a2663f1ba79348988a0fff33fe5
+GET /api/user/my/avatar/ 404 1.031 ms 05/Apr/2025:10:47:57 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | PHPSESSID=91c81a2663f1ba79348988a0fff33fe5; accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzQzODUwMDcwLCJleHAiOjE3NDM4NTE4NzB9.ULeNeDcDCJBgUhYyMceFF5qWvC-AVinN-I9T2mGy1ZI
+GET /api/anime/ 304 6.386 ms 05/Apr/2025:10:47:57 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | -
+GET /api/auth/profile 200 36.396 ms 05/Apr/2025:10:47:59 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | PHPSESSID=91c81a2663f1ba79348988a0fff33fe5; accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzQzODUwMDcwLCJleHAiOjE3NDM4NTE4NzB9.ULeNeDcDCJBgUhYyMceFF5qWvC-AVinN-I9T2mGy1ZI
+GET /api/anime/ 304 85.785 ms 05/Apr/2025:10:48:11 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | -
+GET /api/auth/profile 304 29.787 ms 05/Apr/2025:10:48:12 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | PHPSESSID=91c81a2663f1ba79348988a0fff33fe5; accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzQzODUwMDcwLCJleHAiOjE3NDM4NTE4NzB9.ULeNeDcDCJBgUhYyMceFF5qWvC-AVinN-I9T2mGy1ZI
+GET /api/auth/exit 200 19.955 ms 05/Apr/2025:10:48:15 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | PHPSESSID=91c81a2663f1ba79348988a0fff33fe5; accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzQzODUwMDcwLCJleHAiOjE3NDM4NTE4NzB9.ULeNeDcDCJBgUhYyMceFF5qWvC-AVinN-I9T2mGy1ZI
+OPTIONS /api/auth/auth 204 0.215 ms 05/Apr/2025:10:48:26 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | -
+POST /api/auth/auth - - ms 05/Apr/2025:10:48:28 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | PHPSESSID=91c81a2663f1ba79348988a0fff33fe5
+GET /api/user/my/avatar/ 404 1.091 ms 05/Apr/2025:10:48:29 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | PHPSESSID=91c81a2663f1ba79348988a0fff33fe5
+OPTIONS /api/auth/auth 204 0.224 ms 05/Apr/2025:10:48:48 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | -
+POST /api/auth/auth 200 268.862 ms 05/Apr/2025:10:48:48 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | PHPSESSID=91c81a2663f1ba79348988a0fff33fe5
+GET /api/user/my/avatar/ 404 1.320 ms 05/Apr/2025:10:48:52 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | PHPSESSID=91c81a2663f1ba79348988a0fff33fe5; accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3RpbmciLCJpYXQiOjE3NDM4NTAxMjgsImV4cCI6MTc0Mzg1MTkyOH0.uNYGqYjg1mv3VO739-cxAT1cTBwzZJ_suLSJ8QdUfV8
+GET /api/anime/ 304 4.680 ms 05/Apr/2025:10:48:52 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | -
+GET /api/auth/profile 200 24.562 ms 05/Apr/2025:10:48:58 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | PHPSESSID=91c81a2663f1ba79348988a0fff33fe5; accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3RpbmciLCJpYXQiOjE3NDM4NTAxMjgsImV4cCI6MTc0Mzg1MTkyOH0.uNYGqYjg1mv3VO739-cxAT1cTBwzZJ_suLSJ8QdUfV8
+GET /api/user/my/avatar/ 404 0.853 ms 05/Apr/2025:10:49:15 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | PHPSESSID=91c81a2663f1ba79348988a0fff33fe5; accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3RpbmciLCJpYXQiOjE3NDM4NTAxMjgsImV4cCI6MTc0Mzg1MTkyOH0.uNYGqYjg1mv3VO739-cxAT1cTBwzZJ_suLSJ8QdUfV8
+GET /api/auth/profile 304 93.162 ms 05/Apr/2025:10:49:15 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | PHPSESSID=91c81a2663f1ba79348988a0fff33fe5; accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3RpbmciLCJpYXQiOjE3NDM4NTAxMjgsImV4cCI6MTc0Mzg1MTkyOH0.uNYGqYjg1mv3VO739-cxAT1cTBwzZJ_suLSJ8QdUfV8
+GET /api/user/my/avatar/ 404 0.893 ms 05/Apr/2025:10:49:36 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | PHPSESSID=91c81a2663f1ba79348988a0fff33fe5; accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3RpbmciLCJpYXQiOjE3NDM4NTAxMjgsImV4cCI6MTc0Mzg1MTkyOH0.uNYGqYjg1mv3VO739-cxAT1cTBwzZJ_suLSJ8QdUfV8
+GET /api/auth/profile 304 100.356 ms 05/Apr/2025:10:49:36 +0000 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0 | PHPSESSID=91c81a2663f1ba79348988a0fff33fe5; accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3RpbmciLCJpYXQiOjE3NDM4NTAxMjgsImV4cCI6MTc0Mzg1MTkyOH0.uNYGqYjg1mv3VO739-cxAT1cTBwzZJ_suLSJ8QdUfV8
+GET /api/anime/ 200 103.473 ms 05/Apr/2025:11:21:47 +0000 | PostmanRuntime/7.43.2 | -

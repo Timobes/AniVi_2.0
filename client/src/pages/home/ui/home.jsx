@@ -32,7 +32,7 @@ export const HomePage = () => {
         <main>
             <div className='anime-list'>
                 {
-                    data[0].anime.map((anime) => (
+                    data[0].map((anime) => (
                         <div key={anime.anime_id} className='anime-preview'>
                             <Link to={`/anime/${anime.anime_id}`}>
                                 <img src={anime.poster_url} alt="" />
